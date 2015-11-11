@@ -4,7 +4,7 @@
     "label": "Software Engineer (TS/SCI CI Poly)",
     "email": "askldjd@gmail.com",
     "phone": "(808) 232-7868",
-    "website": "http://askldjd.wordpress.com",
+    "website": "http://www.askldjd.com",
     "summary": "A full stack software engineer with over 10 years of experience looking to solve challenging problems across all domains.",
     "location": {
       "address": "12415 Great Park Cir Apt 302",
@@ -15,16 +15,27 @@
     },
 
     "profiles": [{
-      "url": "http://askldjd.wordpress.com"
+      "url": "http://www.askldjd.com"
     }]
   },
   "work": [{
+    "company": "United States Digital Service - Social Security Adminstration",
+    "position": "Digital Specialist",
+    "website": "https://www.whitehouse.gov/digital/united-states-digital-service",
+    "picture": "",
+    "startDate": "2015-11-07",
+    "summary": "Developer on the Disability Case Processing System (DCPS) to replace the current Disability Determination system.",
+    "highlights": [
+
+    ]
+  }, {
     "company": "Boeing / Digital Receiver Technology",
-    "position": "Technical Lead Engineer",
+    "position": "Technical Lead Engineer (Leave of Absence)",
     "website": "http://www.drti.com",
     "picture": "",
     "startDate": "2005-06-15",
-    "summary": "Throughout the years, I have developed in a full stack environment that encompasses high performance embedded C++ applications, backend Java web services and high level frontend development using the MEAN stack.",
+    "endDate": "2015-10-31",
+    "summary": "Developed in a full stack environment that encompasses high performance embedded C++ applications, backend Java web services and high level frontend development using the MEAN stack.",
     "highlights": [
       "(2014-15) Led and developed a modern web frontend for an embedded system. The UI frontend framework uses Angular.js and React.js. The layout is responsive and heavily influenced by Google's Material Design guidelines. The REST backend is developed in Node.js with Hapi and a LevelDB NoSQL database. The backend is heavily optimized for an embedded environment and can scale from under 50MB to 16GB of memory.",
 
@@ -47,12 +58,16 @@
     "institution": "Johns Hopkins University (2007)",
     "area": "Computer Science",
     "studyType": "Master",
-    "gpa": "3.88"
+    "gpa": "3.88",
+    "startDate" : "2005-09-01",
+    "endDate" : "2007-06-01"
   }, {
     "institution": "Rensselaer Polytechnic Institute (2005)",
     "area": "Computer Science / Economics (minor in Mathematics)",
     "studyType": "Bachelor",
-    "gpa": "3.91"
+    "gpa": "3.91",
+    "startDate" : "2001-09-01",
+    "endDate" : "2005-05-01"
   }],
   "awards": [{
     "title": "Engineer of the Year in 2014 (Nominated)",
