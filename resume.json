@@ -5,17 +5,18 @@
     "email": "askldjd@gmail.com",
     "phone": "(808) 232-7868",
     "website": "http://www.askldjd.com",
-    "summary": "A full stack software engineer with over 10 years of experience looking to solve challenging problems across all domains.",
+    "summary": "Currently employed at United States Digital Service as a Digital Specialist to support the DCPS at the Social Security Administration.",
     "location": {
-      "address": "12415 Great Park Cir Apt 302",
-      "postalCode": "MD 20876",
+      "address": "",
+      "postalCode": "20876",
       "city": "Germantown",
       "countryCode": "US",
       "region": "Maryland"
     },
 
     "profiles": [{
-      "url": "http://www.askldjd.com"
+      "url": "http://www.askldjd.com",
+      "network" : "Blog"
     }]
   },
   "work": [{
