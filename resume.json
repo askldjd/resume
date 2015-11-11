@@ -1,0 +1,95 @@
+{
+  "basics": {
+    "name": "Alan Ning",
+    "label": "Software Engineer (TS/SCI CI Poly)",
+    "email": "askldjd@gmail.com",
+    "phone": "(808) 232-7868",
+    "website": "http://askldjd.wordpress.com",
+    "summary": "A full stack software engineer with over 10 years of experience looking to solve challenging problems across all domains.",
+    "location": {
+      "address": "12415 Great Park Cir Apt 302",
+      "postalCode": "MD 20876",
+      "city": "Germantown",
+      "countryCode": "US",
+      "region": "Maryland"
+    },
+
+    "profiles": [{
+      "url": "http://askldjd.wordpress.com"
+    }]
+  },
+  "work": [{
+    "company": "Boeing / Digital Receiver Technology",
+    "position": "Technical Lead Engineer",
+    "website": "http://www.drti.com",
+    "picture": "",
+    "startDate": "2005-06-15",
+    "summary": "Throughout the years, I have developed in a full stack environment that encompasses high performance embedded C++ applications, backend Java web services and high level frontend development using the MEAN stack.",
+    "highlights": [
+      "(2014-15) Led and developed a modern web frontend for an embedded system. The UI frontend framework uses Angular.js and React.js. The layout is responsive and heavily influenced by Google's Material Design guidelines. The REST backend is developed in Node.js with Hapi and a LevelDB NoSQL database. The backend is heavily optimized for an embedded environment and can scale from under 50MB to 16GB of memory.",
+
+      "(2013-14) Led cyber security research on routing raw IP frames from the Linux kernel to a mobile device. IP table and ARP cache customization concepts were discovered that fooled the kernel into performing the routing. The research became part of the DRT software product line.",
+
+      "(2014) Led research on a packet decryption solution using AWS High Performance Computing (HPC). A prototype was implemented using NVIDIA GPU CUDA framework, and resulted in over 10x speedup compare to a traditional CPU based decryption.",
+
+      "(2013) Led research to integrate the DRT receiver output with Hadoop and Cassandra along with Elasticsearch and Kibana dashboard. Hundreds of GB of event logs were archived, indexed, and analyzed. The end result was well received in the annual symposium.",
+
+      "(2012) Led and developed an Android application that communicates with a high performance spectrum scanner. The application was developed using Eclipse, targeted Android 4.x, and was backward compatible with Android 2.3. The software can be seen on the company homepage.",
+
+      "(2011) Led and developed numerous SOAP based web services in Java. AXIS2 and Tomcat were the primary technology tools in the stack.",
+
+      "(2010) Personally developed a performance profiling tool in C++ and C# to profile an embedded Windows application. The Windows Performance Counter API were consumed through C++ while the data is plotted using C# Zedgraph.",
+
+      "(2008-11) Developed a high performance spectrum scanner in C++. Heavy CPU and currency optimizations were performed on the energy detection output through Boost ASIO framework."
+    ]
+  }],
+  "education": [{
+    "institution": "Johns Hopkins University (2007)",
+    "area": "Computer Science",
+    "studyType": "Master",
+    "gpa": "3.88"
+  }, {
+    "institution": "Rensselaer Polytechnic Institute (2005)",
+    "area": "Computer Science / Economics (minor in Mathematics)",
+    "studyType": "Bachelor",
+    "gpa": "3.91"
+  }],
+  "awards": [{
+    "title": "Engineer of the Year in 2014 (Nominated)",
+    "awarder": "Boeing"
+  }, {
+    "title": "Engineer of the Year in 2012",
+    "awarder": "DRTi"
+  }],
+  "skills": [{
+    "name": "Front-end Development",
+    "keywords": [
+      "HTML5",
+      "SCSS",
+      "AngularJS",
+      "React"
+    ]
+  }, {
+    "name": "Server Side Development",
+    "keywords": [
+      "Node.js",
+      "Express.js",
+      "Hapi.js",
+      "Java",
+      "C#",
+      "RethinkDB",
+	  "Docker"
+    ]
+  }, {
+    "name": "High Performance Embedded Development",
+    "keywords": [
+      "Modern C++",
+      "C"
+    ]
+  }, {
+    "name": "Mobile Development",
+    "keywords": [
+      "Android"
+    ]
+  }]
+}
