@@ -5,7 +5,7 @@
     "email": "askldjd@gmail.com",
     "phone": "(808) 232-7868",
     "website": "http://www.askldjd.com",
-    "summary": "Currently employed at United States Digital Service as a Digital Specialist to support the DCPS at the Social Security Administration.",
+    "summary": "Currently employed at United States Digital Service to develop Disability Case Processing System (DCPS) at the Social Security Administration.",
     "location": {
       "address": "",
       "postalCode": "20876",
@@ -16,7 +16,7 @@
 
     "profiles": [{
       "url": "http://www.askldjd.com",
-      "network" : "Blog"
+      "network" : "Personal Blog"
     }]
   },
   "work": [{
@@ -25,9 +25,14 @@
     "website": "https://www.whitehouse.gov/digital/united-states-digital-service",
     "picture": "",
     "startDate": "2015-11-07",
-    "summary": "Developer on the Disability Case Processing System (DCPS) to replace the current Disability Determination system.",
+    "summary": "Technical Lead on Disability Case Processing System (DCPS), a modern nation-wide SSA disability case processing system.",
     "highlights": [
-
+      "Leading and developing a disability case processing system with a modern microservice architecture. The overall system is very large because of the complex business process, as well as the integration with numerous legacy mainframe systems.",
+      "The core product is an HTML5 Single-Page Application based on a variant of the MEAN stack (ReactJS, Node/Express, and Postgres). Numerous technologies are deployed to support server side development.",
+      "Elasticsearch is used to support dashboard-type summary through Aggregation API and text searches through Search API.",
+      "Redis is used to support microservice session storage, as well as integrations with legacy SSA services.",
+      "Zookeeper is used to provide global locks in the distributed environment.",
+      "Docker is used to wrap each microservice into isolated container. The cloud deployment is provisioned by Openshift/Kubernetes over AWS. "
     ]
   }, {
     "company": "Boeing / Digital Receiver Technology",
@@ -36,7 +41,7 @@
     "picture": "",
     "startDate": "2005-06-15",
     "endDate": "2015-10-31",
-    "summary": "Developed in a full stack environment that encompasses high performance embedded C++ applications, backend Java web services and high level frontend development using the MEAN stack.",
+    "summary": "Developed in a full stack environment that encompasses high performance embedded C++ applications, backend Java web services, and high level frontend development using the MEAN stack.",
     "highlights": [
       "(2014-15) Led and developed a modern web frontend for an embedded system. The UI frontend framework uses Angular.js and React.js. The layout is responsive and heavily influenced by Google's Material Design guidelines. The REST backend is developed in Node.js with Hapi and a LevelDB NoSQL database. The backend is heavily optimized for an embedded environment and can scale from under 50MB to 16GB of memory.",
 
@@ -71,17 +76,21 @@
     "endDate" : "2005-05-01"
   }],
   "awards": [{
-    "title": "Engineer of the Year in 2014 (Nominated)",
-    "awarder": "Boeing"
+    "title": "Engineer of the Year",
+    "awarder": "Boeing",
+    "date": "2012-12-01",
+    "summary": "Engineer of the Year in 2014 (Nominated)"
   }, {
-    "title": "Engineer of the Year in 2012",
-    "awarder": "DRTi"
+    "title": "Engineer of the Year",
+    "awarder": "DRTi",
+    "date": "2012-12-01",
+    "summary": "Engineer of the Year in 2012"
   }],
   "skills": [{
     "name": "Front-end Development",
     "keywords": [
       "HTML5",
-      "SCSS",
+      "LESS/SCSS",
       "AngularJS",
       "React"
     ]
@@ -94,7 +103,18 @@
       "Java",
       "C#",
       "RethinkDB",
-	  "Docker"
+      "Redis",
+      "Elasticsearch",
+      "Zookeeper"
+    ]
+  }, {
+    "name": "Cloud Development",
+    "keywords": [
+      "Docker",
+      "Openshift",
+      "Kubernetes",
+      "AWS ECS",
+      "AWS Beanstalk"
     ]
   }, {
     "name": "High Performance Embedded Development",
