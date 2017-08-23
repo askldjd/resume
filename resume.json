@@ -24,7 +24,7 @@
   "work": [{
     "company": "United States Digital Service - Department of Veterans Affairs",
     "position": "Digital Specialist",
-    "website": "https://www.whitehouse.gov/digital/united-states-digital-service",
+    "website": "https://www.usds.gov",
     "picture": "",
     "startDate": "2016-09-21",
     "summary": "Site Reliability Engineer for Caseflow, an open source effort to streamline the Veterans Appeals Case Processing System.",
@@ -41,7 +41,7 @@
   }, {
     "company": "United States Digital Service - Social Security Adminstration",
     "position": "Digital Specialist",
-    "website": "https://www.whitehouse.gov/digital/united-states-digital-service",
+    "website": "https://www.usds.gov",
     "picture": "",
     "startDate": "2015-11-07",
     "endDate": "2016-09-20",
