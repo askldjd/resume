@@ -5,7 +5,6 @@
     "email": "askldjd@gmail.com",
     "phone": "(808) 232-7868",
     "website": "https://www.askldjd.com",
-    "summary": "Currently employed at United States Digital Service to develop Disability Case Processing System (DCPS) at the Social Security Administration.",
     "location": {
       "address": "",
       "postalCode": "20171",
@@ -17,6 +16,9 @@
     "profiles": [{
       "url": "http://www.askldjd.com",
       "network": "Personal Blog"
+    }, {
+      "url": "https://github.com/askldjd",
+      "network": "Github Profile"
     }]
   },
   "work": [{
@@ -27,7 +29,14 @@
     "startDate": "2016-09-21",
     "summary": "Site Reliability Engineer for Caseflow, an effort to streamline the Veterans Appeals Case Processing System",
     "highlights": [
-      "Maintain and build infrastructure in AWS environment"
+      "Built and maintained a self healing infrastructure in the AWS Govcloud environment using Ansible and Terraform.",
+      "Oversee daily application deployments and ensure system reliability abd scalability.",
+      "Developed and provisioned monitoring infrastructure using Prometheus, Grafana and Sentry.",
+      "Migrated a 30 year old Oracle database that holds all Veterans Appeals to the cloud using AWS DMS.",
+      "Troubleshoot highly complex networking issues in every layer (2-7).",
+      "Built a CI/CD pipeline with Jenkins to maximize team velocity.",
+      "Help set up AWS Direct Connect with VA on-premise network, and migrate VA's infrastructure to the cloud",
+      "Automate my job away."
     ]
   }, {
     "company": "United States Digital Service - Social Security Adminstration",
@@ -38,7 +47,7 @@
     "endDate": "2016-09-20",
     "summary": "Technical Lead on Disability Case Processing System (DCPS), a modern nation-wide SSA disability case processing system.",
     "highlights": [
-      "Leading and developing a disability case processing system with a modern microservice architecture. The overall system is very large because of the complex business process, as well as the integration with numerous legacy mainframe systems.",
+      "Led and developed a disability case processing system with a modern microservice architecture. The overall system is very large because of the complex business process, as well as the integration with numerous legacy mainframe systems.",
       "The core product is an HTML5 Single-Page Application based on a variant of the MEAN stack (ReactJS, Node/Express, and Postgres). Numerous technologies are deployed to support server side development.",
       "Elasticsearch is used to support dashboard-type summary through Aggregation API and text searches through Search API.",
       "Redis is used to support microservice session storage, as well as integrations with legacy SSA services.",
@@ -107,7 +116,8 @@
       "RethinkDB",
       "Redis",
       "Elasticsearch",
-      "Zookeeper"
+      "Zookeeper",
+      "Ruby on Rails"
     ]
   }, {
     "name": "Cloud Development",
@@ -115,8 +125,7 @@
       "Docker",
       "Openshift",
       "Kubernetes",
-      "AWS ECS",
-      "AWS Beanstalk"
+      "AWS"
     ]
   }, {
     "name": "High Performance Embedded Development",

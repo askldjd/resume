@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/askldjd/resume#readme",
   "dependencies": {
+    "jsonresume-theme-kwan": "0.0.2",
     "jsonresume-theme-paper": "^0.3.5",
     "jsonresume-theme-slick": "^0.1.16",
     "resume-cli": "^0.4.19"
