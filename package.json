@@ -1,17 +1,17 @@
 {
   "name": "resume",
   "version": "1.0.0",
-  "description": "",
+  "description": "Alan Ning's resume",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "generate:html": "resume export index.html -t slick",
+    "generate:pdf": "resume export resume.pdf -t paper"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/askldjd/resume.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Alan Ning",
   "bugs": {
     "url": "https://github.com/askldjd/resume/issues"
   },
