@@ -27,14 +27,14 @@
     "website": "https://www.whitehouse.gov/digital/united-states-digital-service",
     "picture": "",
     "startDate": "2016-09-21",
-    "summary": "Site Reliability Engineer for Caseflow, an effort to streamline the Veterans Appeals Case Processing System",
+    "summary": "Site Reliability Engineer for Caseflow, an open source effort to streamline the Veterans Appeals Case Processing System.",
     "highlights": [
-      "Built and maintained a self healing infrastructure in the AWS Govcloud environment using Ansible and Terraform.",
-      "Oversee daily application deployments and ensure system reliability abd scalability.",
+      "Oversee daily application deployments and ensure system reliability and scalability in a high stress environment.",
+      "Built and maintained a self healing infrastructure in the AWS Govcloud environment using Ansible and Terraform.",      
       "Developed and provisioned monitoring infrastructure using Prometheus, Grafana and Sentry.",
       "Migrated a 30 year old Oracle database that holds all Veterans Appeals to the cloud using AWS DMS.",
-      "Troubleshoot highly complex networking issues in every layer (2-7).",
-      "Built a CI/CD pipeline with Jenkins to maximize team velocity.",
+      "Troubleshoot highly complex networking issues in multiple networking layers (2-7).",
+      "Built a CI/CD pipeline with Github/Jenkins/Slack to maximize team velocity.",
       "Help set up AWS Direct Connect with VA on-premise network, and migrate VA's infrastructure to the cloud",
       "Automate my job away."
     ]
@@ -101,6 +101,7 @@
     "name": "Front-end Development",
     "keywords": [
       "HTML5",
+      "D3",
       "LESS/SCSS",
       "AngularJS",
       "React"
@@ -125,7 +126,9 @@
       "Docker",
       "Openshift",
       "Kubernetes",
-      "AWS"
+      "AWS",
+      "Ansible",
+      "Terraform"
     ]
   }, {
     "name": "High Performance Embedded Development",
