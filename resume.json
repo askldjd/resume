@@ -1,33 +1,53 @@
 {
   "basics": {
     "name": "Alan Ning",
-    "label": "Software Engineer (TS/SCI CI Poly)",
+    "label": "Software Engineer",
     "email": "askldjd@gmail.com",
     "phone": "(808) 232-7868",
-    "website": "http://www.askldjd.com",
-    "summary": "Currently employed at United States Digital Service to develop Disability Case Processing System (DCPS) at the Social Security Administration.",
+    "website": "https://www.askldjd.com",
     "location": {
       "address": "",
-      "postalCode": "20876",
-      "city": "Germantown",
+      "postalCode": "20171",
+      "city": "Herndon",
       "countryCode": "US",
-      "region": "Maryland"
+      "region": "Virginia"
     },
 
     "profiles": [{
       "url": "http://www.askldjd.com",
-      "network" : "Personal Blog"
+      "network": "Personal Blog"
+    }, {
+      "url": "https://github.com/askldjd",
+      "network": "Github Profile"
     }]
   },
   "work": [{
+    "company": "United States Digital Service - Department of Veterans Affairs",
+    "position": "Digital Specialist",
+    "website": "https://www.whitehouse.gov/digital/united-states-digital-service",
+    "picture": "",
+    "startDate": "2016-09-21",
+    "summary": "Site Reliability Engineer for Caseflow, an effort to streamline the Veterans Appeals Case Processing System",
+    "highlights": [
+      "Built and maintained a self healing infrastructure in the AWS Govcloud environment using Ansible and Terraform.",
+      "Oversee daily application deployments and ensure system reliability abd scalability.",
+      "Developed and provisioned monitoring infrastructure using Prometheus, Grafana and Sentry.",
+      "Migrated a 30 year old Oracle database that holds all Veterans Appeals to the cloud using AWS DMS.",
+      "Troubleshoot highly complex networking issues in every layer (2-7).",
+      "Built a CI/CD pipeline with Jenkins to maximize team velocity.",
+      "Help set up AWS Direct Connect with VA on-premise network, and migrate VA's infrastructure to the cloud",
+      "Automate my job away."
+    ]
+  }, {
     "company": "United States Digital Service - Social Security Adminstration",
     "position": "Digital Specialist",
     "website": "https://www.whitehouse.gov/digital/united-states-digital-service",
     "picture": "",
     "startDate": "2015-11-07",
+    "endDate": "2016-09-20",
     "summary": "Technical Lead on Disability Case Processing System (DCPS), a modern nation-wide SSA disability case processing system.",
     "highlights": [
-      "Leading and developing a disability case processing system with a modern microservice architecture. The overall system is very large because of the complex business process, as well as the integration with numerous legacy mainframe systems.",
+      "Led and developed a disability case processing system with a modern microservice architecture. The overall system is very large because of the complex business process, as well as the integration with numerous legacy mainframe systems.",
       "The core product is an HTML5 Single-Page Application based on a variant of the MEAN stack (ReactJS, Node/Express, and Postgres). Numerous technologies are deployed to support server side development.",
       "Elasticsearch is used to support dashboard-type summary through Aggregation API and text searches through Search API.",
       "Redis is used to support microservice session storage, as well as integrations with legacy SSA services.",
@@ -44,36 +64,27 @@
     "summary": "Developed in a full stack environment that encompasses high performance embedded C++ applications, backend Java web services, and high level frontend development using the MEAN stack.",
     "highlights": [
       "(2014-15) Led and developed a modern web frontend for an embedded system. The UI frontend framework uses Angular.js and React.js. The layout is responsive and heavily influenced by Google's Material Design guidelines. The REST backend is developed in Node.js with Hapi and a LevelDB NoSQL database. The backend is heavily optimized for an embedded environment and can scale from under 50MB to 16GB of memory.",
-
       "(2013-14) Led cyber security research on routing raw IP frames from the Linux kernel to a mobile device. IP table and ARP cache customization concepts were discovered that fooled the kernel into performing the routing. The research became part of the DRT software product line.",
-
       "(2014) Led research on a packet decryption solution using AWS High Performance Computing (HPC). A prototype was implemented using NVIDIA GPU CUDA framework, and resulted in over 10x speedup compare to a traditional CPU based decryption.",
-
       "(2013) Led research to integrate the DRT receiver output with Hadoop and Cassandra along with Elasticsearch and Kibana dashboard. Hundreds of GB of event logs were archived, indexed, and analyzed. The end result was well received in the annual symposium.",
-
       "(2012) Led and developed an Android application that communicates with a high performance spectrum scanner. The application was developed using Eclipse, targeted Android 4.x, and was backward compatible with Android 2.3. The software can be seen on the company homepage.",
-
       "(2011) Led and developed numerous SOAP based web services in Java. AXIS2 and Tomcat were the primary technology tools in the stack.",
-
       "(2010) Personally developed a performance profiling tool in C++ and C# to profile an embedded Windows application. The Windows Performance Counter API were consumed through C++ while the data is plotted using C# Zedgraph.",
-
       "(2008-11) Developed a high performance spectrum scanner in C++. Heavy CPU and currency optimizations were performed on the energy detection output through Boost ASIO framework."
     ]
   }],
   "education": [{
-    "institution": "Johns Hopkins University (2007)",
+    "institution": "Johns Hopkins University",
     "area": "Computer Science",
     "studyType": "Master",
-    "gpa": "3.88",
-    "startDate" : "2005-09-01",
-    "endDate" : "2007-06-01"
+    "startDate": "2005-09-01",
+    "endDate": "2007-06-01"
   }, {
-    "institution": "Rensselaer Polytechnic Institute (2005)",
-    "area": "Computer Science / Economics (minor in Mathematics)",
+    "institution": "Rensselaer Polytechnic Institute",
+    "area": "Computer Science / Economics (Summa Cum Laude)",
     "studyType": "Bachelor",
-    "gpa": "3.91",
-    "startDate" : "2001-09-01",
-    "endDate" : "2005-05-01"
+    "startDate": "2001-09-01",
+    "endDate": "2005-05-01"
   }],
   "awards": [{
     "title": "Engineer of the Year",
@@ -105,7 +116,8 @@
       "RethinkDB",
       "Redis",
       "Elasticsearch",
-      "Zookeeper"
+      "Zookeeper",
+      "Ruby on Rails"
     ]
   }, {
     "name": "Cloud Development",
@@ -113,8 +125,7 @@
       "Docker",
       "Openshift",
       "Kubernetes",
-      "AWS ECS",
-      "AWS Beanstalk"
+      "AWS"
     ]
   }, {
     "name": "High Performance Embedded Development",
