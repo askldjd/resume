@@ -7,6 +7,7 @@ You will need node.js and NPM available.
 ## Instruction
 
 1. `git clone git@github.com:askldjd/resume.git`
+1. `git checkout gh-page`
 1. `npm install`
 1. `npm run generate:html`
 1. `npm run generate:pdf`
