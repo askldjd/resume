@@ -8,8 +8,8 @@ You will need node.js and NPM available.
 
 1. `git clone git@github.com:askldjd/resume.git`
 1. `git checkout gh-page`
-1. `npm install`
-1. `npm run generate:html`
-1. `npm run generate:pdf`
+1. `yarn install`
+1. `npm run build`
+1. `npm run analyze`
 
 You should see the resume in `index.html` and `resume.pdf`
