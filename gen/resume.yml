@@ -26,8 +26,8 @@ work:
     startDate: '2016-09-21'
     summary: 'I became a SRE because the other guy left.'
     highlights:
-      - 'Guided the VA cloud migration effort that included Direct Connect configurations, network performance analysis, and VPC design that scales for thousands of tenants.'
-      - 'Led the Caseflow SRE team to design and build a resilient cloud infrastructure while integrating with legacy systems. Also built a CI/CD pipeline with daily production deployment to maximize team velocity.'
+      - 'Guided the VA cloud migration effort. This includes Direct Connect configurations, network performance analysis, and VPC design that scales for thousands of tenants.'
+      - 'Led the Caseflow SRE team to design and build a resilient cloud infrastructure while integrating to legacy systems. Also built a CI/CD pipeline with daily production deployment to maximize team velocity.'
       - 'Migrated a 30 year old Oracle database that holds all Veterans Appeals to the cloud using AWS DMS.'
       - 'Automated my job away.'
   -
@@ -51,7 +51,7 @@ work:
     summary: 'Started as an embedded C++ developer, ended up doing the entire software stack 10 years later.'
     highlights:
       - 'During the first 4 years, I was an embedded programmer writing C++. My day-to-day focus was to write high performance code that does not have memory leaks, stack/heap corruptions or race conditions.'
-      - 'For the next six years, I became a tech lead and worked in a wide variety projects across the development stack. Over the years, I have developed Java SOAP service, C# WinForms application, integrating with big data tools like Cassandara, Android application, NVIDIA CUDA Framework. I also did a bit of cybersecurity research that involved forwarding mobile IP packets using ARP poisoning.'
+      - 'In the next six years, I became a tech lead and developed a wide variety projects across the development stack. Over the years, I have developed Java SOAP service, C# WinForms application, integrating with big data tools like Cassandara, Android application, NVIDIA CUDA Framework. I also did a bit of cybersecurity research that involved forwarding mobile IP packets using ARP poisoning.'
 education:
   -
     institution: 'Johns Hopkins University'
