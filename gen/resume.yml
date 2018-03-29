@@ -1,0 +1,122 @@
+basics:
+  name: 'Alan Ning'
+  label: 'Software Engineer / Problem Solver'
+  email: askldjd@gmail.com
+  phone: '(808) 232-7868'
+  website: 'https://www.askldjd.com'
+  location:
+    address: ""
+    postalCode: '20171'
+    city: Herndon
+    countryCode: US
+    region: Virginia
+  profiles:
+    -
+      url: 'http://www.askldjd.com'
+      network: 'Personal Blog'
+    -
+      url: 'https://github.com/askldjd'
+      network: 'Github Profile'
+work:
+  -
+    company: 'United States Digital Service - Department of Veterans Affairs'
+    position: 'Site Reliability Engineer'
+    website: 'https://www.usds.gov'
+    picture: ""
+    startDate: '2016-09-21'
+    summary: 'I became a SRE because the other guy left.'
+    highlights:
+      - 'Guided the VA cloud migration effort. This includes Direct Connect configurations, network performance analysis, and VPC design that scales for thousands of tenants.'
+      - 'Led the Caseflow SRE team to design and build a resilient cloud infrastructure while integrating to legacy systems. Also built a CI/CD pipeline with daily production deployment to maximize team velocity.'
+      - 'Migrated a 30 year old Oracle database that holds all Veterans Appeals to the cloud using AWS DMS.'
+      - 'Automated my job away.'
+  -
+    company: 'United States Digital Service - Social Security Adminstration'
+    position: 'Technical Lead'
+    website: 'https://www.usds.gov'
+    picture: ""
+    startDate: '2015-11-07'
+    endDate: '2016-09-20'
+    summary: 'I was hired as a Node.js coach and ended up being the Technical Lead on Disability Case Processing System (DCPS).'
+    highlights:
+      - 'Led and developed a complex disability case processing system using a microservice architecture with modern HTML5 SPA frontend'
+      - 'The project was extremely complicated. In addition to the usual micro-service challenges such as data consistency and debugging, we also had to integrate with legacy mainframe systems and mailing machines.'
+  -
+    company: 'Boeing / Digital Receiver Technology'
+    position: 'Technical Lead Engineer'
+    website: 'http://www.drti.com'
+    picture: ""
+    startDate: '2005-06-15'
+    endDate: '2015-10-31'
+    summary: 'Started as an embedded C++ developer, ended up doing the entire software stack 10 years later.'
+    highlights:
+      - 'During the first 4 years, I was an embedded programmer writing C++. My day-to-day focus was to write high performance code that does not have memory leaks, stack/heap corruptions or race conditions.'
+      - 'In the next six years, I became a tech lead and developed a wide variety projects across the development stack. Over the years, I have developed Java SOAP service, C# WinForms application, integrating with big data tools like Cassandara, Android application, NVIDIA CUDA Framework. I also did a bit of cybersecurity research that involved forwarding mobile IP packets using ARP poisoning.'
+education:
+  -
+    institution: 'Johns Hopkins University'
+    area: 'Computer Science'
+    studyType: Master
+    startDate: '2005-09-01'
+    endDate: '2007-06-01'
+  -
+    institution: 'Rensselaer Polytechnic Institute'
+    area: 'Computer Science / Economics (Summa Cum Laude)'
+    studyType: Bachelor
+    startDate: '2001-09-01'
+    endDate: '2005-05-01'
+awards:
+  -
+    title: 'Engineer of the Year'
+    awarder: Boeing
+    date: '2012-12-01'
+    summary: 'Engineer of the Year in 2014 (Nominated)'
+  -
+    title: 'Engineer of the Year'
+    awarder: DRTi
+    date: '2012-12-01'
+    summary: 'Engineer of the Year in 2012'
+skills:
+  -
+    name: 'Front-end Development'
+    keywords:
+      - HTML5
+      - D3
+      - SCSS
+      - AngularJS
+      - React
+  -
+    name: 'Server Side Development'
+    keywords:
+      - Node.js
+      - Express.js
+      - Hapi.js
+      - Java
+      - 'C#'
+      - RethinkDB
+      - Redis
+      - Elasticsearch
+      - Zookeeper
+      - 'Ruby on Rails'
+  -
+    name: 'Cloud Development'
+    keywords:
+      - Docker
+      - Openshift
+      - Kubernetes
+      - AWS
+      - Ansible
+      - Terraform
+      - Jenkins
+      - Prometheus
+      - Sentry
+      - Redis
+  -
+    name: 'High Performance Embedded Development'
+    keywords:
+      - 'Modern C++'
+      - C
+  -
+    name: 'Mobile Development'
+    keywords:
+      - Android

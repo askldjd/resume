@@ -1,0 +1,171 @@
+{
+  "name": "Alan Ning",
+  "info": {
+    "label": "Software Engineer / Problem Solver"
+  },
+  "contact": {
+    "email": "askldjd@gmail.com",
+    "phone": "(808) 232-7868",
+    "website": "https://www.askldjd.com"
+  },
+  "meta": {
+    "format": "FRESH@^1.0.0-beta",
+    "modified": "2018-03-29T01:20:23.477Z"
+  },
+  "location": {
+    "city": "Herndon",
+    "region": "Virginia",
+    "country": "US",
+    "code": "20171",
+    "address": ""
+  },
+  "employment": {
+    "history": [
+      {
+        "position": "Site Reliability Engineer",
+        "employer": "United States Digital Service - Department of Veterans Affairs",
+        "summary": "I became a SRE because the other guy left.",
+        "current": true,
+        "start": "2016-09-21",
+        "url": "https://www.usds.gov",
+        "keywords": [],
+        "highlights": [
+          "Guided the VA cloud migration effort that includes Direct Connect configurations, network performance analysis, and VPC design that scales for thousands of tenants.",
+          "Led the Caseflow SRE team to design and build a resilient cloud infrastructure while integrating to legacy systems. Also built a CI/CD pipeline with daily production deployment to maximize team velocity.",
+          "Migrated a 30 year old Oracle database that holds all Veterans Appeals to the cloud using AWS DMS.",
+          "Automated my job away."
+        ]
+      },
+      {
+        "position": "Technical Lead",
+        "employer": "United States Digital Service - Social Security Adminstration",
+        "summary": "I was hired as a Node.js coach and ended up being the Technical Lead on Disability Case Processing System (DCPS).",
+        "start": "2015-11-07",
+        "end": "2016-09-20",
+        "url": "https://www.usds.gov",
+        "keywords": [],
+        "highlights": [
+          "Led and developed a complex disability case processing system using a microservice architecture with modern HTML5 SPA frontend",
+          "The project was extremely complicated. In addition to the usual micro-service challenges such as data consistency and debugging, we also had to integrate with legacy mainframe systems and mailing machines."
+        ]
+      },
+      {
+        "position": "Technical Lead Engineer",
+        "employer": "Boeing / Digital Receiver Technology",
+        "summary": "Started as an embedded C++ developer, ended up doing the entire software stack 10 years later.",
+        "start": "2005-06-15",
+        "end": "2015-10-31",
+        "url": "http://www.drti.com",
+        "keywords": [],
+        "highlights": [
+          "During the first 4 years, I was an embedded programmer writing C++. My day-to-day focus was to write high performance code that does not have memory leaks, stack/heap corruptions or race conditions.",
+          "In the next six years, I became a tech lead and developed a wide variety projects across the development stack. Over the years, I have developed Java SOAP service, C# WinForms application, integrating with big data tools like Cassandara, Android application, NVIDIA CUDA Framework. I also did a bit of cybersecurity research that involved forwarding mobile IP packets using ARP poisoning."
+        ]
+      }
+    ]
+  },
+  "education": {
+    "level": "",
+    "history": [
+      {
+        "institution": "Johns Hopkins University",
+        "start": "2005-09-01",
+        "end": "2007-06-01",
+        "summary": "",
+        "area": "Computer Science",
+        "studyType": "Master"
+      },
+      {
+        "institution": "Rensselaer Polytechnic Institute",
+        "start": "2001-09-01",
+        "end": "2005-05-01",
+        "summary": "",
+        "area": "Computer Science / Economics (Summa Cum Laude)",
+        "studyType": "Bachelor"
+      }
+    ]
+  },
+  "skills": {
+    "sets": [
+      {
+        "name": "Front-end Development",
+        "skills": [
+          "HTML5",
+          "D3",
+          "SCSS",
+          "AngularJS",
+          "React"
+        ]
+      },
+      {
+        "name": "Server Side Development",
+        "skills": [
+          "Node.js",
+          "Express.js",
+          "Hapi.js",
+          "Java",
+          "C#",
+          "RethinkDB",
+          "Redis",
+          "Elasticsearch",
+          "Zookeeper",
+          "Ruby on Rails"
+        ]
+      },
+      {
+        "name": "Cloud Development",
+        "skills": [
+          "Docker",
+          "Openshift",
+          "Kubernetes",
+          "AWS",
+          "Ansible",
+          "Terraform",
+          "Jenkins",
+          "Prometheus",
+          "Sentry",
+          "Redis"
+        ]
+      },
+      {
+        "name": "High Performance Embedded Development",
+        "skills": [
+          "Modern C++",
+          "C"
+        ]
+      },
+      {
+        "name": "Mobile Development",
+        "skills": [
+          "Android"
+        ]
+      }
+    ]
+  },
+  "recognition": [
+    {
+      "title": "Engineer of the Year",
+      "date": "2012-12-01",
+      "from": "Boeing",
+      "summary": "Engineer of the Year in 2014 (Nominated)"
+    },
+    {
+      "title": "Engineer of the Year",
+      "date": "2012-12-01",
+      "from": "DRTi",
+      "summary": "Engineer of the Year in 2012"
+    }
+  ],
+  "social": [
+    {
+      "label": "Personal Blog",
+      "network": "Personal Blog",
+      "url": "http://www.askldjd.com"
+    },
+    {
+      "label": "Github Profile",
+      "network": "Github Profile",
+      "url": "https://github.com/askldjd"
+    }
+  ]
+}

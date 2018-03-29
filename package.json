@@ -4,8 +4,11 @@
   "description": "Alan Ning's resume",
   "main": "index.js",
   "scripts": {
-    "generate:html": "resume export index.html -t slick",
-    "generate:pdf": "resume export resume.pdf -t paper"
+    "build:index" : "hackmyresume build ./resume.json TO index.html -t modern",
+    "build:paper" : "hackmyresume build ./resume.json TO gen/resume.all -t node_modules/jsonresume-theme-paper",
+    "build": "npm run build:index && npm run build:paper",
+    "analyze": "hackmyresume analyze ./resume.json",
+    "validate": "hackmyresume validate ./resume.json"
   },
   "repository": {
     "type": "git",
@@ -17,10 +20,12 @@
   },
   "homepage": "https://github.com/askldjd/resume#readme",
   "dependencies": {
+    "hackmyresume": "^1.9.0-beta",
     "jsonresume-theme-elegant": "^1.11.2",
     "jsonresume-theme-kwan": "0.0.2",
+    "jsonresume-theme-onepage": "0.0.3",
+    "jsonresume-theme-onepage-ds": "0.0.1",
     "jsonresume-theme-paper": "^0.3.5",
-    "jsonresume-theme-slick": "^0.1.16",
-    "resume-cli": "^0.4.19"
+    "jsonresume-theme-slick": "^0.1.16"
   }
 }
