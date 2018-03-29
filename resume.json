@@ -14,7 +14,7 @@
     },
 
     "profiles": [{
-      "url": "http://www.askldjd.com",
+      "url": "https://www.askldjd.com",
       "network": "Personal Blog"
     }, {
       "url": "https://github.com/askldjd",
@@ -49,7 +49,7 @@
   }, {
     "company": "Boeing / Digital Receiver Technology",
     "position": "Technical Lead Engineer",
-    "website": "http://www.drti.com",
+    "website": "https://www.drti.com",
     "picture": "",
     "startDate": "2005-06-15",
     "endDate": "2015-10-31",
