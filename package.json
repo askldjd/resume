@@ -7,7 +7,8 @@
     "build:index" : "hackmyresume build ./resume.json TO index.html -t modern",
     "build:paper" : "hackmyresume build ./resume.json TO gen/resume.all -t node_modules/jsonresume-theme-paper",
     "build": "npm run build:index && npm run build:paper",
-    "analyze": "hackmyresume analyze ./resume.json"
+    "analyze": "hackmyresume analyze ./resume.json",
+    "validate": "hackmyresume validate ./resume.json"
   },
   "repository": {
     "type": "git",
