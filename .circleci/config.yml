@@ -17,7 +17,7 @@ jobs:
       - run:
           name: Install dependencies
           command: |
-            apt-get update && apt-get install wkhtmltopdf
+            apt-get update && apt-get install -y wkhtmltopdf
 
       - run: yarn install
 
