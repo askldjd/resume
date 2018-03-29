@@ -14,8 +14,11 @@ jobs:
           - v1-dependencies-{{ checksum "package.json" }}
           - v1-dependencies-
 
+      # This is the slowest part of the build and should be moved to the base 
+      # image. However, I don't want to maintain a custom image just for this
+      # repo. I am letting this go for now.
       - run:
-          name: Install dependencies
+          name: install wkhtmltopdf
           command: |
             apt-get update && apt-get install -y wkhtmltopdf
 
