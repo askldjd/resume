@@ -1,3 +1,7 @@
+# Alan Ning's Resume
+
+[![Build Status](https://circleci.com/gh/askldjd/resume.svg?style=shield)](https://circleci.com/gh/askldjd/)
+
 My resume is in JSON format following the [JSON Resume schema](https://jsonresume.org/).
 
 ## Prereq
