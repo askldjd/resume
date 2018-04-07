@@ -4,11 +4,11 @@
 
 My resume is in JSON format following the [JSON Resume schema](https://jsonresume.org/).
 
-## Prereq
+## Prerequisites
 
 You will need node.js and yarn available.
 
-## Instruction
+## Instructions
 
 1. `git clone git@github.com:askldjd/resume.git`
 1. `git checkout gh-page`
