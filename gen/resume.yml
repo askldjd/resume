@@ -12,7 +12,7 @@ basics:
     region: Virginia
   profiles:
     -
-      url: 'http://www.askldjd.com'
+      url: 'https://www.askldjd.com'
       network: 'Personal Blog'
     -
       url: 'https://github.com/askldjd'
@@ -24,34 +24,39 @@ work:
     website: 'https://www.usds.gov'
     picture: ""
     startDate: '2016-09-21'
-    summary: 'I became a SRE because the other guy left.'
+    summary: 'I began as the SRE for Caseflow and left having architected the VA''s migration to AWS.'
     highlights:
-      - 'Guided the VA cloud migration effort. This includes Direct Connect configurations, network performance analysis, and VPC design that scales for thousands of tenants.'
-      - 'Led the Caseflow SRE team to design and build a resilient cloud infrastructure while integrating to legacy systems. Also built a CI/CD pipeline with daily production deployment to maximize team velocity.'
-      - 'Migrated a 30 year old Oracle database that holds all Veterans Appeals to the cloud using AWS DMS.'
+      - 'Guided the VA cloud migration effort, which includes Direct Connect configurations, network performance analysis, and VPC design that scales for thousands of tenants.'
+      - 'Led the SRE team for the Veterans Appeals modernization effort (Caseflow).'
+      - 'Designed and built a resilient cloud infrastructure for Caseflow that integrated with the VA''s legacy systems.'
+      - 'Built a CI/CD pipeline that allowed daily production deployments, which increased the team''s velocity.'
+      - 'Migrated the 30 year old Oracle database that holds all Veterans Appeals to the cloud using AWS DMS.'
       - 'Automated my job away.'
   -
-    company: 'United States Digital Service - Social Security Adminstration'
+    company: 'United States Digital Service - Social Security Administration'
     position: 'Technical Lead'
     website: 'https://www.usds.gov'
     picture: ""
     startDate: '2015-11-07'
     endDate: '2016-09-20'
-    summary: 'I was hired as a Node.js coach and ended up being the Technical Lead on Disability Case Processing System (DCPS).'
+    summary: 'I began as a React/Node.js coach and left as the Technical Lead on the Disability Case Processing System (DCPS).'
     highlights:
-      - 'Led and developed a complex disability case processing system using a microservice architecture with modern HTML5 SPA frontend'
-      - 'The project was extremely complicated. In addition to the usual micro-service challenges such as data consistency and debugging, we also had to integrate with legacy mainframe systems and mailing machines.'
+      - 'Led and developed the Social Security Disability modernization project using microservice architecture with an HTML5 SPA frontend.'
+      - 'Integrated the modern microservice architecture with legacy mainframe systems and mailing machines.'
+      - 'Delivered a highly visible MVP under a tight deadline, which led to successful product shipment across many states.'
   -
     company: 'Boeing / Digital Receiver Technology'
     position: 'Technical Lead Engineer'
-    website: 'http://www.drti.com'
+    website: 'https://www.drti.com'
     picture: ""
     startDate: '2005-06-15'
     endDate: '2015-10-31'
-    summary: 'Started as an embedded C++ developer, ended up doing the entire software stack 10 years later.'
+    summary: 'I began as an embedded C++ developer and left as a full stack software developer.'
     highlights:
-      - 'During the first 4 years, I was an embedded programmer writing C++. My day-to-day focus was to write high performance code that does not have memory leaks, stack/heap corruptions or race conditions.'
-      - 'In the next six years, I became a tech lead and developed a wide variety projects across the development stack. Over the years, I have developed Java SOAP service, C# WinForms application, integrating with big data tools like Cassandara, Android application, NVIDIA CUDA Framework. I also did a bit of cybersecurity research that involved forwarding mobile IP packets using ARP poisoning.'
+      - 'Wrote high performance C++ code with the focus of minimizing memory leaks, stack/heap corruptions, or race conditions.'
+      - 'Developed multiple applications, both native and web-based, including technologies such as Java SOAP, C# WinForms, CassandraDB, Android, NVIDIA CUDA Framework andNode/React/AngularJS.'
+      - 'Performed cybersecurity research that involved forwarding mobile IP packets using ARP poisoning.'
+      - 'Became a technical lead for a wide variety of projects.'
 education:
   -
     institution: 'Johns Hopkins University'
@@ -65,17 +70,6 @@ education:
     studyType: Bachelor
     startDate: '2001-09-01'
     endDate: '2005-05-01'
-awards:
-  -
-    title: 'Engineer of the Year'
-    awarder: Boeing
-    date: '2012-12-01'
-    summary: 'Engineer of the Year in 2014 (Nominated)'
-  -
-    title: 'Engineer of the Year'
-    awarder: DRTi
-    date: '2012-12-01'
-    summary: 'Engineer of the Year in 2012'
 skills:
   -
     name: 'Front-end Development'
@@ -93,6 +87,7 @@ skills:
       - Hapi.js
       - Java
       - 'C#'
+      - Python
       - RethinkDB
       - Redis
       - Elasticsearch
