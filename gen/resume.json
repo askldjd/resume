@@ -10,7 +10,7 @@
   },
   "meta": {
     "format": "FRESH@^1.0.0-beta",
-    "modified": "2018-04-08T03:42:48.260Z"
+    "modified": "2018-06-08T01:23:04.449Z"
   },
   "location": {
     "city": "Herndon",
@@ -62,7 +62,7 @@
         "keywords": [],
         "highlights": [
           "Wrote high performance C++ code with the focus of minimizing memory leaks, stack/heap corruptions, or race conditions.",
-          "Developed multiple applications, both native and web-based, including technologies such as Java SOAP, C# WinForms, CassandraDB, Android, NVIDIA CUDA Framework andNode/React/AngularJS.",
+          "Developed multiple applications, both native and web-based, including technologies such as Java SOAP, C# WinForms, CassandraDB, Android, NVIDIA CUDA Framework and Node/React/AngularJS.",
           "Performed cybersecurity research that involved forwarding mobile IP packets using ARP poisoning.",
           "Became a technical lead for a wide variety of projects."
         ]
