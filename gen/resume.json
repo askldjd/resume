@@ -6,27 +6,49 @@
   "contact": {
     "email": "askldjd@gmail.com",
     "phone": "(808) 232-7868",
-    "website": "https://www.askldjd.com"
+    "website": "https://askldjd.wordpress.com"
   },
   "meta": {
     "format": "FRESH@^1.0.0-beta",
-    "modified": "2018-06-08T01:23:04.449Z"
+    "modified": "2021-01-31T17:59:51.144Z"
   },
   "location": {
     "city": "Herndon",
     "region": "Virginia",
     "country": "US",
-    "code": "20171",
+    "code": "20170",
     "address": ""
   },
   "employment": {
     "history": [
       {
         "position": "Site Reliability Engineer",
+        "employer": "Uptime2020 Consultant",
+        "summary": "Supported various companies to ensure the security and reliability during the 2020 US election cycle.",
+        "start": "2020-06-01",
+        "end": "2020-09-01",
+        "url": "",
+        "keywords": []
+      },
+      {
+        "position": "Staff Reliability Engineer",
+        "employer": "Tenable",
+        "summary": "I spend a lot of time creating solutions to deploy applications to hundreds of Kubernetes clusters, to scale data stores to the tens of petabytes and to utilize high performance edge computing in Tenable.io.",
+        "current": true,
+        "start": "2018-10-01",
+        "url": "https://www.tenable.com",
+        "keywords": [],
+        "highlights": [
+          "Designed and implemented a custom Elasticsearch sharding layer to break out the monolith database into over 60 databases. This allows the platform data layer to have infinitely scalability.",
+          "Implemented a caching layer for Tenable.io border using Cloudflare worker. This layer handles over 5000 request per sec, and petabytes of bandwidth are saved per year."
+        ]
+      },
+      {
+        "position": "Site Reliability Engineer",
         "employer": "United States Digital Service - Department of Veterans Affairs",
         "summary": "I began as the SRE for Caseflow and left having architected the VA's migration to AWS.",
-        "current": true,
         "start": "2016-09-21",
+        "end": "2018-08-31",
         "url": "https://www.usds.gov",
         "keywords": [],
         "highlights": [
@@ -115,7 +137,8 @@
           "Redis",
           "Elasticsearch",
           "Zookeeper",
-          "Ruby on Rails"
+          "Ruby on Rails",
+          "Kafka"
         ]
       },
       {
@@ -125,6 +148,7 @@
           "Openshift",
           "Kubernetes",
           "AWS",
+          "Azure",
           "Ansible",
           "Terraform",
           "Jenkins",
@@ -152,7 +176,7 @@
     {
       "label": "Personal Blog",
       "network": "Personal Blog",
-      "url": "https://www.askldjd.com"
+      "url": "https://askldjd.wordpress.com"
     },
     {
       "label": "Github Profile",

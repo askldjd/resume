@@ -4,17 +4,17 @@
     "label": "Software Engineer / Problem Solver",
     "email": "askldjd@gmail.com",
     "phone": "(808) 232-7868",
-    "website": "https://www.askldjd.com",
+    "website": "https://askldjd.wordpress.com",
     "location": {
       "address": "",
-      "postalCode": "20171",
+      "postalCode": "20170",
       "city": "Herndon",
       "countryCode": "US",
       "region": "Virginia"
     },
 
     "profiles": [{
-      "url": "https://www.askldjd.com",
+      "url": "https://askldjd.wordpress.com",
       "network": "Personal Blog"
     }, {
       "url": "https://github.com/askldjd",
@@ -22,11 +22,31 @@
     }]
   },
   "work": [{
+    "company": "Tenable",
+    "position": "Staff Reliability Engineer",
+    "website": "https://www.tenable.com",
+    "picture": "",
+    "startDate": "2018-10-01",
+    "summary": "I spend a lot of time creating solutions to deploy applications to hundreds of Kubernetes clusters, to scale data stores to the tens of petabytes and to utilize high performance edge computing in Tenable.io.",
+    "highlights": [
+      "Designed and implemented a custom Elasticsearch sharding layer to break out the monolith database into over 60 databases. This allows the platform data layer to have infinitely scalability.",
+      "Implemented a caching layer for Tenable.io border using Cloudflare worker. This layer handles over 5000 request per sec, and petabytes of bandwidth are saved per year."
+    ]
+  },{
+    "company": "Uptime2020 Consultant",
+    "position": "Site Reliability Engineer",
+    "website": "",
+    "picture": "",
+    "startDate": "2020-06-01",
+    "endDate": "2020-09-01",
+    "summary": "Supported various companies to ensure the security and reliability during the 2020 US election cycle."
+  },{
     "company": "United States Digital Service - Department of Veterans Affairs",
     "position": "Site Reliability Engineer",
     "website": "https://www.usds.gov",
     "picture": "",
     "startDate": "2016-09-21",
+    "endDate": "2018-08-31",
     "summary": "I began as the SRE for Caseflow and left having architected the VA's migration to AWS.",
     "highlights": [
       "Guided the VA cloud migration effort, which includes Direct Connect configurations, network performance analysis, and VPC design that scales for thousands of tenants.",
@@ -99,7 +119,8 @@
       "Redis",
       "Elasticsearch",
       "Zookeeper",
-      "Ruby on Rails"
+      "Ruby on Rails",
+      "Kafka"
     ]
   }, {
     "name": "Cloud Development",
@@ -108,6 +129,7 @@
       "Openshift",
       "Kubernetes",
       "AWS",
+      "Azure",
       "Ansible",
       "Terraform",
       "Jenkins",
