@@ -10,7 +10,7 @@
   },
   "meta": {
     "format": "FRESH@^1.0.0-beta",
-    "modified": "2021-01-31T17:59:51.144Z"
+    "modified": "2021-01-31T18:20:19.657Z"
   },
   "location": {
     "city": "Herndon",
@@ -24,7 +24,7 @@
       {
         "position": "Site Reliability Engineer",
         "employer": "Uptime2020 Consultant",
-        "summary": "Supported various companies to ensure the security and reliability during the 2020 US election cycle.",
+        "summary": "Supported various election-related SaaS companies to ensure the their product security and reliability during the 2020 US election cycle.",
         "start": "2020-06-01",
         "end": "2020-09-01",
         "url": "",
@@ -33,14 +33,14 @@
       {
         "position": "Staff Reliability Engineer",
         "employer": "Tenable",
-        "summary": "I spend a lot of time creating solutions to deploy applications to hundreds of Kubernetes clusters, to scale data stores to the tens of petabytes and to utilize high performance edge computing in Tenable.io.",
+        "summary": "I create scalability solutions for Tenable.io.",
         "current": true,
         "start": "2018-10-01",
         "url": "https://www.tenable.com",
         "keywords": [],
         "highlights": [
-          "Designed and implemented a custom Elasticsearch sharding layer to break out the monolith database into over 60 databases. This allows the platform data layer to have infinitely scalability.",
-          "Implemented a caching layer for Tenable.io border using Cloudflare worker. This layer handles over 5000 request per sec, and petabytes of bandwidth are saved per year."
+          "Designed and implemented a custom Elasticsearch sharding layer to break out a petabytes-scale monolith database into an infinitely scalable number of databases.",
+          "Implemented a caching layer for the Tenable.io edge using Cloudflare Worker. This layer handles over 5000 requests per sec, and saves petabytes of bandwidth per year."
         ]
       },
       {
@@ -55,7 +55,6 @@
           "Guided the VA cloud migration effort, which includes Direct Connect configurations, network performance analysis, and VPC design that scales for thousands of tenants.",
           "Led the SRE team for the Veterans Appeals modernization effort (Caseflow).",
           "Designed and built a resilient cloud infrastructure for Caseflow that integrated with the VA's legacy systems.",
-          "Built a CI/CD pipeline that allowed daily production deployments, which increased the team's velocity.",
           "Migrated the 30 year old Oracle database that holds all Veterans Appeals to the cloud using AWS DMS.",
           "Automated my job away."
         ]
