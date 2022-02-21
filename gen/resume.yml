@@ -20,11 +20,11 @@ work:
   -
     company: Manifold.ai
     position: 'Software Architect'
+    website: 'https://www.manifold.ai'
     summary: 'I architect ML pipelines and generate meaningful outcome.'
     current: true
-    start: '2021-10-01'
-    url: 'https://www.manifold.ai'
-    keywords: []
+    startDate: '2021-10-01'
+    highlights: []
   -
     company: 'Uptime2020 Consultant'
     position: 'Site Reliability Engineer'
