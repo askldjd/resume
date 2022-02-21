@@ -4,9 +4,8 @@
   "description": "Alan Ning's resume",
   "main": "index.js",
   "scripts": {
-    "build:index": "hackmyresume build ./resume.json TO index.html -t modern",
     "build:paper": "hackmyresume build ./resume.json TO gen/resume.all -t node_modules/jsonresume-theme-paper",
-    "build": "npm run build:index && npm run build:paper",
+    "build": "npm run build:paper && cp gen/resume.html index.html",
     "analyze": "hackmyresume analyze ./resume.json",
     "validate": "hackmyresume validate ./resume.json"
   },

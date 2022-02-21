@@ -3,517 +3,709 @@
     
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
         <title>Alan Ning</title>
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic'
+        <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700'
         rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600'
+        rel='stylesheet' type='text/css'>
         <style>
-            * {
-              box-sizing: border-box;
+            body, html {
+              padding-top:2.5em;
+              margin:0;
+              background-color:#fafafa;
             }
             
-            main {
-              display: block;
-            }
-            
-            body {
-              font-size: 15px;
-              color: #333;
-              line-height: 1.42857143;
-              background-color: #F0F0F0;
-              margin: 0;
-              padding: 0;
-              font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Calibri', 'sans-serif';
-            }
-            
-            /* Typical page borders are awkward when rendered to PDF. */
-            body.pdf {
-              background-color: #FFFFFF;
-            }
-            
-            /* Adobe or wkhtmltopdf has issues with the <main> tag, so we use <div> for
-            the PDF case, <main> for the HTML case, and style both via an ID. */
-            #main {
-              background-color: #FFF;
-              margin: 10px;
-              padding: 10px;
-              border: 1px solid #E6E6E6;
-            }
-            
-            body.pdf > #main {
-              border: none;
-            }
-            
-            #container > header {
-              padding-top: 6em;
-              padding-bottom: 1em;
-            }
-            
-            body.pdf #container > header {
-              padding: 0;
-            }
-            
-            #main > #container > section {
-              margin-left: 150px;
-              position: relative;
-              display: block;
-            }
-            
-            section > div {
-              margin-bottom: 60px;
-            }
-            
-            span.fa
-            {
-              font-size: 56px;
+            .note {
+              display:block;
               position: absolute;
-              top: 37px;
-              transform: translateY(-50%);
-              left: -100px;
-              color: #1a4367;
+              top:10px;
+              left:10px;
+            
+              font-family: "Open Sans";
+              font-size: 0.6em;
             }
             
-            hr {
-              margin-top: 20px;
-              margin-bottom: 20px;
-              border: 0;
-              border-top: 1px solid #EEE;
+            .new {
+              background-color: #81C784;
+            
+              border: 1px solid #757575;
+              padding: 1px;
+              border-radius: 4px;
+            
             }
             
-            .tenure, .keywords {
-              font-size: 75%;
-            }
+            /* Header */
             
-            h1 {
-              margin: 0;
-              font-size: 46px;
-              display: inline-block;
-            }
-            
-            h2 {
-              font-size: 30px;
-              color: #4376a2;
-              text-transform: uppercase;
-              font-weight: normal;
-              padding-top: 20px;
-              margin-bottom: 60px;
-            }
-            
-            h3 {
-              margin-bottom: 0;
-              font-size: 18px;
-            }
-            
-            a, a:visited {
-              color: #428BCA;
-              text-decoration: none;
-              font-weight: bold;
-            }
-            
-            a:hover {
-              text-decoration: underline;
-            }
-            
-            .defunct {
-              color: #989898;
-              font-weight: bold;
-            }
-            
-            #summary {
-              font-size: 150%;
-              margin-left: 0;
-              padding: 20px 0;
-            }
-            
-            #summary > p > strong {
-              font-size: 1.25em;
-            }
-            
-            #contact {
-              float: right;
-            }
-            
-            #summary > header > .fa-info {
-              font-size: 70px;
-              letter-spacing: 5px;
-              text-transform: uppercase;
-              font-weight: normal;
-              top: 50%;
-              left: -85px;
-              transform: translateY(-50%);
-            }
-            
-            #summary h2 {
-              display: none;
-            }
-            
-            
-            .label-keyword {
-              display: inline-block;
-              background: #e8f4ff;
-              color: black;
-              font-size: 0.9em;
-              padding: 5px;
-              border: 1px solid #357ebd;
-              border-radius: 5px;
-              margin-top: 2px;
-              font-weight: bold;
+            header {
+              width:100%;
+              vertical-align: middle;
               text-align: center;
+             
             }
             
-            .notes {
-              font-size: 10px;
-              display: block;
-              font-weight: normal;
-              text-transform: uppercase;
+            .header-content {
+              display: inline-block;
             }
             
-            .card-skills {
-                position: relative;
-            }
-            .card-nested {
-                min-height: 0;
-                margin-bottom: 10px;
-                border-width: 1px 0 0 0;
-            }
-            .card {
-                background: #FFF;
-                border-radius: 3px;
-                padding: 10px;
+            .pic {
+              margin: 0 auto;
+              margin-top:-2.5em;
+              
+              border-radius:10em;
+              height:4em;
+              width:4em;
+              
+              border: 2px solid #e0e0e0;
+              transition : all 0.5s linear;
+              
             }
             
-            .skill-level {
-              border-radius: 3px;
-              position: absolute;
-              top: 10px;
-              bottom: 10px;
-              left: 0;
-              width: 10px;
-              box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
-            }
-            .skill-level .skill-progress {
-              position: absolute;
-              border-radius: 3px;
-              bottom: 0;
-              width: 100%;
-              -webkit-transition: height 1s ease;
-            }
-            .skill-level .skill-progress.beginner {
-              height: 50%;
-              background: #e74c3c;
-            }
-            .skill-level .skill-progress.intermediate {
-              height: 70%;
-              background: #f1c40f;
-            }
-            .skill-level .skill-progress.advanced {
-              height: 80%;
-              background: #428bca;
-            }
-            .skill-level .skill-progress.master {
-              height: 95%;
-              background: #5cb85c;
-            }
-            .skill-info {
-              margin-left: 10px;
-            }
-            @media (max-width: 480px) {
-              .skill-info {
-                margin-left: 20px;
+            @-webkit-keyframes wiggle {
+              0%   {
+                transform: rotate(0deg);
+              }
+              25%  {
+                transform: rotate(-30deg);
+              }
+              50%  {
+                transform: rotate(15deg);
+              }
+              100% {
+                transform: rotate(0deg);
               }
             }
-            .skill-info > strong {
-              font-weight: 400;
-              font-size: 24px;
-              color: #1d1d1d;
-              line-height: 24px;
+            
+            .pic:hover {
+              /*Webkit fix*/
+              -webkit-transform: translateZ(0);
+              
+              cursor:pointer;
+              
+              -webkit-animation: wiggle 0.7s cubic-bezier(0.6, -0.28, 0.735, 0.045);
             }
             
-            .list-unstyled {
-              padding-left: 0;
-              list-style: none;
+            .header-text {
+              margin-top:0.5em;
+              margin-left:1em;
             }
             
-            .card-skills {
-              position: relative;
+            header p {
+              text-align:center;
+              font-family: "Merriweather";
+              
+              margin:0;
+              
+              color: #212121;
             }
             
-            .space-top {
-                margin-top: 5px;
+            .first-name {
+               font-size: 1.05em;
             }
             
-            #container {
-              max-width: 800px;
+            .subtitle {
+              font-family: "Merriweather";
+              padding-top:.3em;
+              font-size:0.55em;
+              font-weight:500;
+              color: #424242;
+            }
+            
+            /* Information */
+            
+            .paper {
               margin: 0 auto;
+              margin-bottom:1em;
+              
+              background-color:white;
+              width:60%;
+              
+              padding:0.5em 0 0.5em 0;
+              
+              border-top: 1px solid #e0e0e0;
+              border-left: 1px solid #e0e0e0;
+              border-right: 1px solid #e0e0e0;
+              border-bottom: 3px solid #e0e0e0;
+              border-radius:3px;
             }
             
-            #elevator-pitch {
-              text-align: center;
-              font-size: 24px;
-              color: #BFC1C3;
-              text-transform: uppercase;
+            @media(max-width:992px) {
+              .paper {
+                width:80%;
+              }
+            }
+            
+            /* Content Part */
+            
+            .content-wrapper {
+              padding-right:7.25%;
+            }
+            
+            .content {
+              display:table;
+              width:100%;
+              
+              padding-top:1.5em;
+              
+              /*border-top: 1px solid #eeeeee;*/
+            }
+            
+            .content:last-child {
+              margin-bottom: 2em;
+            }
+            
+            body > div > article > div > section:last-child {
+              padding-bottom:1.5em;
+            }
+            
+            .row {
+                display:table-row;
+            }
+            .row div {
+                display:table-cell;
+            }
+            
+            .content-cat {
+              font-family: "Merriweather";
+              font-variant:small-caps;
+              font-weight:300;
+              letter-spacing: 1px;
+              
+              color: #212121;
+              
+              font-size:0.975em;
+              
+              text-align:center;
+              vertical-align:middle;
+            
+              padding-left:6.66%;
+              width:30%;
+            }
+            
+            .content-cat p {
+              font-size:0.55em;
+              font-weight:600;
+              
+              margin-bottom:0;
+            }
+            
+            .content-text {
+              border-left:1px solid #e0e0e0;
+              transition: border 0.66s ease-in;
+            }
+            
+            .big-text {
+              vertical-align:top;
+            }
+            
+            .content-text ul {
+              padding:0;
+              margin:0;
+              margin-top:0.15em;
+              
+              width:85%;
+              margin-left:1.5em;
+            }
+            
+            .content-text ul:last-child {
+              margin-bottom:0.5em;
+            }
+            
+            .content-text ul li {
+              font-family: "Open Sans";
+              font-size:0.7em;
+              
+              display:inline-block;
+              
+            }
+            
+            .content-text ul li:first-child {
+              width:35%;
+              
+              color: #424242;
+              
+              font-weight:600;
+            }
+            
+            .content-text ul li a, div.content-text.work-listing.education-listing > p > strong > a {
+              text-decoration: none;
+              color: #0277bd;
+            }
+            
+            .content-text ul li a:hover {
+              color:#4fc3f7;
+            }
+            
+            .work-listing p {
+              font-family: "Open Sans";
+              font-size:0.7em;
+              
+              color: #424242;
+              
+              margin-left:2em;
+              margin-top:0.45em;
+              margin-bottom: 0.45em;
+            }
+            
+            div.content-text.work-listing.education-listing > p:nth-child(2) {
+              margin-top:0.25em;
+            }
+            
+            .work-listing .highlight {
+              font-family: "Open Sans";
+              font-size:0.7em;
+              font-weight:400;
+              
+              color: #424242;
+              
+              margin-left:3.25em;
+              padding-left:0.5em;
+              
+              border-left:1px solid #e0e0e0;
+              
+            }
+            
+            .education-listing > .heading {
+              font-weight:600;
+              
+              margin-top:0.75em;
+              margin-left:2em;
+            }
+            
+            .education-listing > .highlight {
+              margin-left:3.25em;
+            }
+            
+            .highlight {
+              transition: border .33s ease-in;
+            }
+            
+            .profiles-listing ul li, .profiles-listing ul li:first-child {
+              width:32%;
               font-weight: normal;
             }
             
-            .res-label {
-              font-style: italic;
+            .work-content, .education-content {
+              padding-top: .75em;
+            }
+            
+            section.content.education-content > div > div.content-cat {
+              vertical-align: top;
+            }
+            
+            div.content-text.skills-listing > p {
+              font-family: "Open Sans";
+              font-size:0.7em;
+              font-weight:400;
+            
+              margin-left: 2em;
+              margin-top: 0.45em;
+              margin-bottom: 0.45em;
+            }
+            
+            div.content-text.skills-listing > p > {
+              color:#212121;
+            }
+            
+            @media screen and (max-width: 600px) {
+              body, html {
+                padding-top: 30px;
+              }
+            
+              .paper {
+                width:95%;
+              }
+            
+              .row div {
+                display: block;
+              }
+            
+              .content-cat {
+                width: 100%;
+              }
+            
+              .content-text ul li {
+                width: 100%;
+              }
+            
+              .content-text ul li:first-child {
+                width: 100%;
+              }
+              
+              .education-listing > .highlight {
+                margin-left: 30px;
+              }
+            }
+        </style>
+        <style media="print">
+            body, html {
+              background-color: white;
+              padding-top: 1.5em;
+            }
+            
+            .paper {
+              width:100%;
+              border: 0;
+            
+              padding-top: 0;
+            }
+            
+            header p {
+              font-size: 1.3em;
+            }
+            
+            .subtitle {
+              font-size: 0.7em;
+            }
+            
+            .header-pic {
+              float:left;
+            }
+            
+            .profiles {
+              display:none;
+            }
+            
+            .content {
+              page-break-inside:avoid; 
+              page-break-after:auto;
+            }
+            
+            .header-text {
+              float:left;
+              margin-top: -1.6em;
+            }
+            
+            .content-wrapper > .content:first-child {
+              padding-top: 2em;
+            }
+            
+            .content:last-child {
+              padding-bottom: 0;
+            }
+            
+            .content-cat {
+              width:33%;
+              color:black;
+              text-align: left;
+            }
+            
+            .content-cat p {
+              font-size:0.6em;
+              font-weight: 600;
+            }
+            
+            header p, .content-text, .work-listing p, .content-text ul li:first-child, .work-listing .highlight, .content-text.skills-listing > ul > li > .highlight {
+              color:black;
+            }
+            
+            .content-text.skills-listing > ul > li span, .subtitle {
+              color:#212121;
+            }
+            
+            .content-text ul:last-child {
+              margin-bottom: 0.25em;
+            }
+            
+            .content-text ul li:first-child {
+              width:50%;
+            }
+            
+            .profiles-listing ul li:first-child {
+              width:32%;
+            }
+            
+            div.content-text.skills-listing > ul > li {
+              width:33%;
+            }
+            
+            .work-listing p {
+              margin-bottom: 0.1em;
+            }
+            
+            div.content-text.skills-listing > ul > li > p {
+              margin-top: 0.4em;
+              margin-bottom: 0.5em;
+            }
+            
+            div.content-text.skills-listing > ul > li {
+              padding-left: 1.5em;
+            }
+            
+            div.content-text.skills-listing > ul > li:first-child {
+              padding-left: 2em;
+            }
+            
+            .note {
+              display:none;
+            }
+            
+            .content-text:hover {
+              border-left:1px solid #eeeeee;
+            }
+            
+            .content-text ul li a:hover {
+              color:#4fc3f7;
+            }
+            
+            .highlight:hover, .content-text.skills-listing > ul > li > .highlight:hover {
+              border-left:1px solid #eeeeee;
+            }
+            
+            .big-text {
+              padding-top: 0;
             }
         </style>
     </head>
     
     <body>
-        <main id="main">
-            <div id="container">
+        <div class="resume-wrapper">
+            <article class="paper">
                 <header>
-                     <h1>Alan Ning</h1>
-                    <div id="contact">
-                        <div class="email"><a href="mailto:askldjd@gmail.com">askldjd@gmail.com</a>
-                        </div>
-                        <div class="phone">(808) 232-7868</div>
-                        <div class="website"><a href="https://askldjd.wordpress.com">https://askldjd.wordpress.com</a>
+                    <div class="header-content">
+                        <div class="header-text">
+                            <p>Alan Ning</p>
+                            <p class="subtitle">Software Engineer / Problem Solver</p>
                         </div>
                     </div>
                 </header>
-                <hr>
-                <section id="skills">
-                    <header>
-                         <h2>Skills</h2>
-                    </header> <span class="fa fa-lg fa-code"></span>
-                    <ul class="list-unstyled">
-                        <li class="card card-nested card-skills">
-                            <div class="skill-level" rel="tooltip" title="" data-placement="left">
-                                <div class="skill-progress "></div>
+                <div class="content-wrapper">
+                    <!-- CONTACT -->
+                    <section class="content">
+                        <div class="row">
+                            <div class="content-cat">Contact</div>
+                            <div class="content-text">
+                                <ul>
+                                    <li>Website</li>
+                                    <li>https://askldjd.com</li>
+                                </ul>
+                                <ul>
+                                    <li>Email</li>
+                                    <li>alan@askldjd.com</li>
+                                </ul>
+                                <ul>
+                                    <li>Phone</li>
+                                    <li>(808) 232-7868</li>
+                                </ul>
                             </div>
-                            <div class="skill-info"> <strong>Front-end Development</strong>
-                                <div class="space-top labels">
-                                    <div class="label label-keyword"> <span class="kw">HTML5</span>
-                                    </div>
-                                    <div class="label label-keyword"> <span class="kw">D3</span>
-                                    </div>
-                                    <div class="label label-keyword"> <span class="kw">SCSS</span>
-                                    </div>
-                                    <div class="label label-keyword"> <span class="kw">AngularJS</span>
-                                    </div>
-                                    <div class="label label-keyword"> <span class="kw">React</span>
-                                    </div>
-                                </div>
+                        </div>
+                    </section>
+                    <!-- LOCATION -->
+                    <section class="content">
+                        <div class="row">
+                            <div class="content-cat">Location</div>
+                            <div class="content-text">
+                                <ul>
+                                    <li>Region</li>
+                                    <li>Virginia</li>
+                                </ul>
                             </div>
-                        </li>
-                        <li class="card card-nested card-skills">
-                            <div class="skill-level" rel="tooltip" title="" data-placement="left">
-                                <div class="skill-progress "></div>
+                        </div>
+                    </section>
+                    <section class="content">
+                        <div class="row">
+                            <div class="content-cat big-text">Work Experience</div>
+                            <div class="content-text work-listing education-listing">
+                                <p style="margin-top:2.4em;"> <strong>Software Architect:</strong>
+
+                                </p>
+                                <p>I architect ML pipelines and generate meaningful outcome.</p>
                             </div>
-                            <div class="skill-info"> <strong>Server Side Development</strong>
-                                <div class="space-top labels">
-                                    <div class="label label-keyword"> <span class="kw">Node.js</span>
-                                    </div>
-                                    <div class="label label-keyword"> <span class="kw">Express.js</span>
-                                    </div>
-                                    <div class="label label-keyword"> <span class="kw">Hapi.js</span>
-                                    </div>
-                                    <div class="label label-keyword"> <span class="kw">Java</span>
-                                    </div>
-                                    <div class="label label-keyword"> <span class="kw">C#</span>
-                                    </div>
-                                    <div class="label label-keyword"> <span class="kw">Python</span>
-                                    </div>
-                                    <div class="label label-keyword"> <span class="kw">RethinkDB</span>
-                                    </div>
-                                    <div class="label label-keyword"> <span class="kw">Redis</span>
-                                    </div>
-                                    <div class="label label-keyword"> <span class="kw">Elasticsearch</span>
-                                    </div>
-                                    <div class="label label-keyword"> <span class="kw">Zookeeper</span>
-                                    </div>
-                                    <div class="label label-keyword"> <span class="kw">Ruby on Rails</span>
-                                    </div>
-                                    <div class="label label-keyword"> <span class="kw">Kafka</span>
-                                    </div>
-                                </div>
+                        </div>
+                    </section>
+                    <section class="content work-content">
+                        <div class="row">
+                            <div class="content-cat big-text">
+                                <p>2020-06-01 till 2020-09-01</p>
                             </div>
-                        </li>
-                        <li class="card card-nested card-skills">
-                            <div class="skill-level" rel="tooltip" title="" data-placement="left">
-                                <div class="skill-progress "></div>
+                            <div class="content-text work-listing education-listing">
+                                <p> <strong>Site Reliability Engineer</strong>
+at <strong>Uptime2020 Consultant:</strong>
+
+                                </p>
+                                <p>Supported various election-related SaaS companies to ensure the their
+                                    product security and reliability during the 2020 US election cycle.</p>
                             </div>
-                            <div class="skill-info"> <strong>Cloud Development</strong>
-                                <div class="space-top labels">
-                                    <div class="label label-keyword"> <span class="kw">Docker</span>
-                                    </div>
-                                    <div class="label label-keyword"> <span class="kw">Openshift</span>
-                                    </div>
-                                    <div class="label label-keyword"> <span class="kw">Kubernetes</span>
-                                    </div>
-                                    <div class="label label-keyword"> <span class="kw">AWS</span>
-                                    </div>
-                                    <div class="label label-keyword"> <span class="kw">Azure</span>
-                                    </div>
-                                    <div class="label label-keyword"> <span class="kw">Ansible</span>
-                                    </div>
-                                    <div class="label label-keyword"> <span class="kw">Terraform</span>
-                                    </div>
-                                    <div class="label label-keyword"> <span class="kw">Jenkins</span>
-                                    </div>
-                                    <div class="label label-keyword"> <span class="kw">Prometheus</span>
-                                    </div>
-                                    <div class="label label-keyword"> <span class="kw">Sentry</span>
-                                    </div>
-                                    <div class="label label-keyword"> <span class="kw">Redis</span>
-                                    </div>
-                                </div>
+                        </div>
+                    </section>
+                    <section class="content work-content">
+                        <div class="row">
+                            <div class="content-cat big-text">
+                                <p>2018-10-01 till 2021-10-01</p>
                             </div>
-                        </li>
-                        <li class="card card-nested card-skills">
-                            <div class="skill-level" rel="tooltip" title="" data-placement="left">
-                                <div class="skill-progress "></div>
+                            <div class="content-text work-listing education-listing">
+                                <p> <strong>Staff Reliability Engineer</strong>
+at <strong><a href="https://www.tenable.com">Tenable:</a></strong>
+
+                                </p>
+                                <p>I create scalability solutions for Tenable.io.</p>
+                                <p class="highlight">Designed and implemented a custom Elasticsearch sharding layer to break
+                                    out a petabytes-scale monolith database into an infinitely scalable number
+                                    of databases.</p>
+                                <p class="highlight">Implemented a caching layer for the Tenable.io edge using Cloudflare Worker.
+                                    This layer handles over 5000 requests per sec, and saves petabytes of bandwidth
+                                    per year.</p>
                             </div>
-                            <div class="skill-info"> <strong>High Performance Embedded Development</strong>
-                                <div class="space-top labels">
-                                    <div class="label label-keyword"> <span class="kw">Modern C++</span>
-                                    </div>
-                                    <div class="label label-keyword"> <span class="kw">C</span>
-                                    </div>
-                                </div>
+                        </div>
+                    </section>
+                    <section class="content work-content">
+                        <div class="row">
+                            <div class="content-cat big-text">
+                                <p>2016-09-21 till 2018-08-31</p>
                             </div>
-                        </li>
-                        <li class="card card-nested card-skills">
-                            <div class="skill-level" rel="tooltip" title="" data-placement="left">
-                                <div class="skill-progress "></div>
+                            <div class="content-text work-listing education-listing">
+                                <p> <strong>Site Reliability Engineer</strong>
+at <strong><a href="https://www.usds.gov">United States Digital Service - Department of Veterans Affairs:</a></strong>
+
+                                </p>
+                                <p>I began as the SRE for Caseflow and left having architected the VA&#x27;s
+                                    migration to AWS.</p>
+                                <p class="highlight">Guided the VA cloud migration effort, which includes Direct Connect configurations,
+                                    network performance analysis, and VPC design that scales for thousands
+                                    of tenants.</p>
+                                <p class="highlight">Led the SRE team for the Veterans Appeals modernization effort (Caseflow).</p>
+                                <p
+                                class="highlight">Designed and built a resilient cloud infrastructure for Caseflow that
+                                    integrated with the VA&#x27;s legacy systems.</p>
+                                    <p class="highlight">Migrated the 30 year old Oracle database that holds all Veterans Appeals
+                                        to the cloud using AWS DMS.</p>
+                                    <p class="highlight">Automated my job away.</p>
                             </div>
-                            <div class="skill-info"> <strong>Mobile Development</strong>
-                                <div class="space-top labels">
-                                    <div class="label label-keyword"> <span class="kw">Android</span>
-                                    </div>
-                                </div>
+                        </div>
+                    </section>
+                    <section class="content work-content">
+                        <div class="row">
+                            <div class="content-cat big-text">
+                                <p>2015-11-07 till 2016-09-20</p>
                             </div>
-                        </li>
-                    </ul>
-                </section>
-                <hr>
-                <section id="employment">
-                    <header> <span class="fa fa-lg fa-building"></span> 
-                         <h2>employment</h2>
+                            <div class="content-text work-listing education-listing">
+                                <p> <strong>Technical Lead</strong>
+at <strong><a href="https://www.usds.gov">United States Digital Service - Social Security Administration:</a></strong>
 
-                    </header>
-                    <div>
-                         <h3><em>Staff Reliability Engineer</em>,
+                                </p>
+                                <p>I began as a React/Node.js coach and left as the Technical Lead on the
+                                    Disability Case Processing System (DCPS).</p>
+                                <p class="highlight">Led and developed the Social Security Disability modernization project
+                                    using microservice architecture with an HTML5 SPA frontend.</p>
+                                <p class="highlight">Integrated the modern microservice architecture with legacy mainframe
+                                    systems and mailing machines.</p>
+                                <p class="highlight">Delivered a highly visible MVP under a tight deadline, which led to successful
+                                    product shipment across many states.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="content work-content">
+                        <div class="row">
+                            <div class="content-cat big-text">
+                                <p>2005-06-15 till 2015-10-31</p>
+                            </div>
+                            <div class="content-text work-listing education-listing">
+                                <p> <strong>Technical Lead Engineer</strong>
+at <strong><a href="https://www.drti.com">Boeing / Digital Receiver Technology:</a></strong>
 
-    <a href="https://www.tenable.com">Tenable</a>
+                                </p>
+                                <p>I began as an embedded C++ developer and left as a full stack software
+                                    developer.</p>
+                                <p class="highlight">Wrote high performance C++ code with the focus of minimizing memory leaks,
+                                    stack/heap corruptions, or race conditions.</p>
+                                <p class="highlight">Developed multiple applications, both native and web-based, including
+                                    technologies such as Java SOAP, C# WinForms, CassandraDB, Android, NVIDIA
+                                    CUDA Framework and Node/React/AngularJS.</p>
+                                <p class="highlight">Performed cybersecurity research that involved forwarding mobile IP packets
+                                    using ARP poisoning.</p>
+                                <p class="highlight">Became a technical lead for a wide variety of projects.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="content">
+                        <div class="row">
+                            <div class="content-cat big-text">Education
+                                <p>2005-09-01 till 2007-06-01</p>
+                            </div>
+                            <div class="content-text work-listing education-listing">
+                                <p class="heading" style="margin-top:2.35em;">Johns Hopkins University</p>
+                                <p class="highlight">Master: <i>Computer Science </i>
 
-    </h3> <span class="tenure">2018-10 — Present</span>
-                        <p>
-                            <p>I create scalability solutions for Tenable.io.</p>
-                        </p>
-                        <ul>
-                            <li>Designed and implemented a custom Elasticsearch sharding layer to break
-                                out a petabytes-scale monolith database into an infinitely scalable number
-                                of databases.</li>
-                            <li>Implemented a caching layer for the Tenable.io edge using Cloudflare Worker.
-                                This layer handles over 5000 requests per sec, and saves petabytes of bandwidth
-                                per year.</li>
-                        </ul>
-                    </div>
-                    <div>
-                         <h3><em>Site Reliability Engineer</em>,
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="content education-content">
+                        <div class="row">
+                            <div class="content-cat big-text">
+                                <p>2001-09-01 till 2005-05-01</p>
+                            </div>
+                            <div class="content-text work-listing education-listing">
+                                <p class="heading">Rensselaer Polytechnic Institute</p>
+                                <p class="highlight">Bachelor: <i>Computer Science / Economics (Summa Cum Laude) </i>
 
-    Uptime2020 Consultant
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="content">
+                        <div class="row">
+                            <div class="content-cat">Skills</div>
+                            <div class="content-text skills-listing">
+                                <p> <span class="name">
+                        <strong>
+                          Front-end Development:
+                        </strong>
+                    </span>
+AngularJS, React, Vue.js</p>
+                                <p> <span class="name">
+                        <strong>
+                          Server Side Development:
+                        </strong>
+                    </span>
+Node.js, Express.js, Java, C#, Python, Redis,
+                                    Elasticsearch, Zookeeper, Ruby on Rails, Kafka, PostgreSQL</p>
+                                <p> <span class="name">
+                        <strong>
+                          Cloud Development:
+                        </strong>
+                    </span>
+Docker, Openshift, Kubernetes, AWS, Azure,
+                                    Ansible, Terraform, Jenkins, Prometheus, Sentry, Redis</p>
+                                <p> <span class="name">
+                        <strong>
+                          High Performance Embedded Development:
+                        </strong>
+                    </span>
+Modern C++, C</p>
+                                <p> <span class="name">
+                        <strong>
+                          Mobile Development:
+                        </strong>
+                    </span>
+Android</p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- LANGUAGE -->
+                    <!-- PROFILES -->
+                    <section class="content profiles">
+                        <div class="row">
+                            <div class="content-cat">Profiles</div>
+                            <div class="content-text profiles-listing">
+                                <ul>
+                                    <li> <a href="https://askldjd.com" target="_blank">
+                              Personal Blog
+                            </a>
 
-    </h3> <span class="tenure">2020-06 — 2020-09</span>
-                        <p>
-                            <p>Supported various election-related SaaS companies to ensure the their
-                                product security and reliability during the 2020 US election cycle.</p>
-                        </p>
-                    </div>
-                    <div>
-                         <h3><em>Site Reliability Engineer</em>,
+                                    </li>
+                                    <li> <a href="https://github.com/askldjd" target="_blank">
+                              Github Profile
+                            </a>
 
-    <a href="https://www.usds.gov">United States Digital Service - Department of Veterans Affairs</a>
-
-    </h3> <span class="tenure">2016-09 — 2018-08</span>
-                        <p>
-                            <p>I began as the SRE for Caseflow and left having architected the VA&#39;s
-                                migration to AWS.</p>
-                        </p>
-                        <ul>
-                            <li>Guided the VA cloud migration effort, which includes Direct Connect configurations,
-                                network performance analysis, and VPC design that scales for thousands
-                                of tenants.</li>
-                            <li>Led the SRE team for the Veterans Appeals modernization effort (Caseflow).</li>
-                            <li>Designed and built a resilient cloud infrastructure for Caseflow that
-                                integrated with the VA&#39;s legacy systems.</li>
-                            <li>Migrated the 30 year old Oracle database that holds all Veterans Appeals
-                                to the cloud using AWS DMS.</li>
-                            <li>Automated my job away.</li>
-                        </ul>
-                    </div>
-                    <div>
-                         <h3><em>Technical Lead</em>,
-
-    <a href="https://www.usds.gov">United States Digital Service - Social Security Administration</a>
-
-    </h3> <span class="tenure">2015-11 — 2016-09</span>
-                        <p>
-                            <p>I began as a React/Node.js coach and left as the Technical Lead on the
-                                Disability Case Processing System (DCPS).</p>
-                        </p>
-                        <ul>
-                            <li>Led and developed the Social Security Disability modernization project
-                                using microservice architecture with an HTML5 SPA frontend.</li>
-                            <li>Integrated the modern microservice architecture with legacy mainframe
-                                systems and mailing machines.</li>
-                            <li>Delivered a highly visible MVP under a tight deadline, which led to successful
-                                product shipment across many states.</li>
-                        </ul>
-                    </div>
-                    <div>
-                         <h3><em>Technical Lead Engineer</em>,
-
-    <a href="https://www.drti.com">Boeing / Digital Receiver Technology</a>
-
-    </h3> <span class="tenure">2005-06 — 2015-10</span>
-                        <p>
-                            <p>I began as an embedded C++ developer and left as a full stack software
-                                developer.</p>
-                        </p>
-                        <ul>
-                            <li>Wrote high performance C++ code with the focus of minimizing memory leaks,
-                                stack/heap corruptions, or race conditions.</li>
-                            <li>Developed multiple applications, both native and web-based, including
-                                technologies such as Java SOAP, C# WinForms, CassandraDB, Android, NVIDIA
-                                CUDA Framework and Node/React/AngularJS.</li>
-                            <li>Performed cybersecurity research that involved forwarding mobile IP packets
-                                using ARP poisoning.</li>
-                            <li>Became a technical lead for a wide variety of projects.</li>
-                        </ul>
-                    </div>
-                </section>
-                <hr>
-                <section id="education">
-                    <header> <span class="fa fa-lg fa-mortar-board"></span> 
-                         <h2>education</h2>
-
-                    </header>
-                    <div>
-                        
-<h3>
-
-Johns Hopkins University
-
-</h3>
-<span class="tenure">2005-09 — 2007-06</span>
-                    </div>
-                    <div>
-                        
-<h3>
-
-Rensselaer Polytechnic Institute
-
-</h3>
-<span class="tenure">2001-09 — 2005-05</span>
-                    </div>
-                </section>
-            </div>
-        </main>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </div>
     </body>
 
 </html>

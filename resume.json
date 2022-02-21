@@ -2,150 +2,173 @@
   "basics": {
     "name": "Alan Ning",
     "label": "Software Engineer / Problem Solver",
-    "email": "askldjd@gmail.com",
+    "email": "alan@askldjd.com",
     "phone": "(808) 232-7868",
-    "website": "https://askldjd.wordpress.com",
+    "website": "https://askldjd.com",
     "location": {
       "address": "",
-      "postalCode": "20170",
       "city": "Herndon",
       "countryCode": "US",
       "region": "Virginia"
     },
-
-    "profiles": [{
-      "url": "https://askldjd.wordpress.com",
-      "network": "Personal Blog"
-    }, {
-      "url": "https://github.com/askldjd",
-      "network": "Github Profile"
-    }]
+    "profiles": [
+      {
+        "url": "https://askldjd.com",
+        "network": "Personal Blog"
+      },
+      {
+        "url": "https://github.com/askldjd",
+        "network": "Github Profile"
+      }
+    ]
   },
-  "work": [{
-    "company": "Tenable",
-    "position": "Staff Reliability Engineer",
-    "website": "https://www.tenable.com",
-    "picture": "",
-    "startDate": "2018-10-01",
-    "summary": "I create scalability solutions for Tenable.io.",
-    "highlights": [
-      "Designed and implemented a custom Elasticsearch sharding layer to break out a petabytes-scale monolith database into an infinitely scalable number of databases.",
-      "Implemented a caching layer for the Tenable.io edge using Cloudflare Worker. This layer handles over 5000 requests per sec, and saves petabytes of bandwidth per year."
-    ]
-  },{
-    "company": "Uptime2020 Consultant",
-    "position": "Site Reliability Engineer",
-    "website": "",
-    "picture": "",
-    "startDate": "2020-06-01",
-    "endDate": "2020-09-01",
-    "summary": "Supported various election-related SaaS companies to ensure the their product security and reliability during the 2020 US election cycle."
-  },{
-    "company": "United States Digital Service - Department of Veterans Affairs",
-    "position": "Site Reliability Engineer",
-    "website": "https://www.usds.gov",
-    "picture": "",
-    "startDate": "2016-09-21",
-    "endDate": "2018-08-31",
-    "summary": "I began as the SRE for Caseflow and left having architected the VA's migration to AWS.",
-    "highlights": [
-      "Guided the VA cloud migration effort, which includes Direct Connect configurations, network performance analysis, and VPC design that scales for thousands of tenants.",
-      "Led the SRE team for the Veterans Appeals modernization effort (Caseflow).",
-      "Designed and built a resilient cloud infrastructure for Caseflow that integrated with the VA's legacy systems.",
-      "Migrated the 30 year old Oracle database that holds all Veterans Appeals to the cloud using AWS DMS.",
-      "Automated my job away."
-    ]
-  }, {
-    "company": "United States Digital Service - Social Security Administration",
-    "position": "Technical Lead",
-    "website": "https://www.usds.gov",
-    "picture": "",
-    "startDate": "2015-11-07",
-    "endDate": "2016-09-20",
-    "summary": "I began as a React/Node.js coach and left as the Technical Lead on the Disability Case Processing System (DCPS).",
-    "highlights": [
-      "Led and developed the Social Security Disability modernization project using microservice architecture with an HTML5 SPA frontend.",
-      "Integrated the modern microservice architecture with legacy mainframe systems and mailing machines.",
-      "Delivered a highly visible MVP under a tight deadline, which led to successful product shipment across many states."
-    ]
-  }, {
-    "company": "Boeing / Digital Receiver Technology",
-    "position": "Technical Lead Engineer",
-    "website": "https://www.drti.com",
-    "picture": "",
-    "startDate": "2005-06-15",
-    "endDate": "2015-10-31",
-    "summary": "I began as an embedded C++ developer and left as a full stack software developer.",
-    "highlights": [
-      "Wrote high performance C++ code with the focus of minimizing memory leaks, stack/heap corruptions, or race conditions.",
-      "Developed multiple applications, both native and web-based, including technologies such as Java SOAP, C# WinForms, CassandraDB, Android, NVIDIA CUDA Framework and Node/React/AngularJS.",
-      "Performed cybersecurity research that involved forwarding mobile IP packets using ARP poisoning.",
-      "Became a technical lead for a wide variety of projects."
-    ]
-  }],
-  "education": [{
-    "institution": "Johns Hopkins University",
-    "area": "Computer Science",
-    "studyType": "Master",
-    "startDate": "2005-09-01",
-    "endDate": "2007-06-01"
-  }, {
-    "institution": "Rensselaer Polytechnic Institute",
-    "area": "Computer Science / Economics (Summa Cum Laude)",
-    "studyType": "Bachelor",
-    "startDate": "2001-09-01",
-    "endDate": "2005-05-01"
-  }],
-  "skills": [{
-    "name": "Front-end Development",
-    "keywords": [
-      "HTML5",
-      "D3",
-      "SCSS",
-      "AngularJS",
-      "React"
-    ]
-  }, {
-    "name": "Server Side Development",
-    "keywords": [
-      "Node.js",
-      "Express.js",
-      "Hapi.js",
-      "Java",
-      "C#",
-      "Python",
-      "RethinkDB",
-      "Redis",
-      "Elasticsearch",
-      "Zookeeper",
-      "Ruby on Rails",
-      "Kafka"
-    ]
-  }, {
-    "name": "Cloud Development",
-    "keywords": [
-      "Docker",
-      "Openshift",
-      "Kubernetes",
-      "AWS",
-      "Azure",
-      "Ansible",
-      "Terraform",
-      "Jenkins",
-      "Prometheus",
-      "Sentry",
-      "Redis"
-    ]
-  }, {
-    "name": "High Performance Embedded Development",
-    "keywords": [
-      "Modern C++",
-      "C"
-    ]
-  }, {
-    "name": "Mobile Development",
-    "keywords": [
-      "Android"
-    ]
-  }]
+  "work": [
+    {
+      "position": "Software Architect",
+      "employer": "Manifold.ai",
+      "summary": "I architect ML pipelines and generate meaningful outcome.",
+      "current": true,
+      "start": "2021-10-01",
+      "url": "https://www.manifold.ai",
+      "keywords": []
+    },
+    {
+      "company": "Tenable",
+      "position": "Staff Reliability Engineer",
+      "website": "https://www.tenable.com",
+      "picture": "",
+      "startDate": "2018-10-01",
+      "endDate": "2021-10-01",
+      "summary": "I create scalability solutions for Tenable.io.",
+      "highlights": [
+        "Designed and implemented a custom Elasticsearch sharding layer to break out a petabytes-scale monolith database into an infinitely scalable number of databases.",
+        "Implemented a caching layer for the Tenable.io edge using Cloudflare Worker. This layer handles over 5000 requests per sec, and saves petabytes of bandwidth per year."
+      ]
+    },
+    {
+      "company": "Uptime2020 Consultant",
+      "position": "Site Reliability Engineer",
+      "website": "",
+      "picture": "",
+      "startDate": "2020-06-01",
+      "endDate": "2020-09-01",
+      "summary": "Supported various election-related SaaS companies to ensure the their product security and reliability during the 2020 US election cycle."
+    },
+    {
+      "company": "United States Digital Service - Department of Veterans Affairs",
+      "position": "Site Reliability Engineer",
+      "website": "https://www.usds.gov",
+      "picture": "",
+      "startDate": "2016-09-21",
+      "endDate": "2018-08-31",
+      "summary": "I began as the SRE for Caseflow and left having architected the VA's migration to AWS.",
+      "highlights": [
+        "Guided the VA cloud migration effort, which includes Direct Connect configurations, network performance analysis, and VPC design that scales for thousands of tenants.",
+        "Led the SRE team for the Veterans Appeals modernization effort (Caseflow).",
+        "Designed and built a resilient cloud infrastructure for Caseflow that integrated with the VA's legacy systems.",
+        "Migrated the 30 year old Oracle database that holds all Veterans Appeals to the cloud using AWS DMS.",
+        "Automated my job away."
+      ]
+    },
+    {
+      "company": "United States Digital Service - Social Security Administration",
+      "position": "Technical Lead",
+      "website": "https://www.usds.gov",
+      "picture": "",
+      "startDate": "2015-11-07",
+      "endDate": "2016-09-20",
+      "summary": "I began as a React/Node.js coach and left as the Technical Lead on the Disability Case Processing System (DCPS).",
+      "highlights": [
+        "Led and developed the Social Security Disability modernization project using microservice architecture with an HTML5 SPA frontend.",
+        "Integrated the modern microservice architecture with legacy mainframe systems and mailing machines.",
+        "Delivered a highly visible MVP under a tight deadline, which led to successful product shipment across many states."
+      ]
+    },
+    {
+      "company": "Boeing / Digital Receiver Technology",
+      "position": "Technical Lead Engineer",
+      "website": "https://www.drti.com",
+      "picture": "",
+      "startDate": "2005-06-15",
+      "endDate": "2015-10-31",
+      "summary": "I began as an embedded C++ developer and left as a full stack software developer.",
+      "highlights": [
+        "Wrote high performance C++ code with the focus of minimizing memory leaks, stack/heap corruptions, or race conditions.",
+        "Developed multiple applications, both native and web-based, including technologies such as Java SOAP, C# WinForms, CassandraDB, Android, NVIDIA CUDA Framework and Node/React/AngularJS.",
+        "Performed cybersecurity research that involved forwarding mobile IP packets using ARP poisoning.",
+        "Became a technical lead for a wide variety of projects."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Johns Hopkins University",
+      "area": "Computer Science",
+      "studyType": "Master",
+      "startDate": "2005-09-01",
+      "endDate": "2007-06-01"
+    },
+    {
+      "institution": "Rensselaer Polytechnic Institute",
+      "area": "Computer Science / Economics (Summa Cum Laude)",
+      "studyType": "Bachelor",
+      "startDate": "2001-09-01",
+      "endDate": "2005-05-01"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Front-end Development",
+      "keywords": [
+        "AngularJS",
+        "React",
+        "Vue.js"
+      ]
+    },
+    {
+      "name": "Server Side Development",
+      "keywords": [
+        "Node.js",
+        "Express.js",
+        "Java",
+        "C#",
+        "Python",
+        "Redis",
+        "Elasticsearch",
+        "Zookeeper",
+        "Ruby on Rails",
+        "Kafka",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "name": "Cloud Development",
+      "keywords": [
+        "Docker",
+        "Openshift",
+        "Kubernetes",
+        "AWS",
+        "Azure",
+        "Ansible",
+        "Terraform",
+        "Jenkins",
+        "Prometheus",
+        "Sentry",
+        "Redis"
+      ]
+    },
+    {
+      "name": "High Performance Embedded Development",
+      "keywords": [
+        "Modern C++",
+        "C"
+      ]
+    },
+    {
+      "name": "Mobile Development",
+      "keywords": [
+        "Android"
+      ]
+    }
+  ]
 }
