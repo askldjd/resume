@@ -18,8 +18,8 @@ basics:
       network: 'Github Profile'
 work:
   -
+    company: Manifold.ai
     position: 'Software Architect'
-    employer: Manifold.ai
     summary: 'I architect ML pipelines and generate meaningful outcome.'
     current: true
     start: '2021-10-01'

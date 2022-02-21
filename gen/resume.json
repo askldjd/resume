@@ -10,7 +10,7 @@
   },
   "meta": {
     "format": "FRESH@^1.0.0-beta",
-    "modified": "2022-02-21T07:28:14.532Z"
+    "modified": "2022-02-21T07:30:22.247Z"
   },
   "location": {
     "city": "Herndon",
@@ -22,6 +22,7 @@
     "history": [
       {
         "position": "Software Architect",
+        "employer": "Manifold.ai",
         "summary": "I architect ML pipelines and generate meaningful outcome.",
         "current": true,
         "keywords": []
