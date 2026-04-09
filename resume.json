@@ -4,7 +4,7 @@
     "label": "Software Engineer / Problem Solver",
     "email": "alan@askldjd.com",
     "phone": "(808) 232-7868",
-    "website": "https://askldjd.com",
+    "url": "https://askldjd.com",
     "location": {
       "address": "",
       "city": "Herndon",
@@ -24,19 +24,17 @@
   },
   "work": [
     {
-      "company": "Manifold.ai",
+      "name": "Manifold.ai",
       "position": "Software Architect",
-      "website": "https://www.manifold.ai",
+      "url": "https://www.manifold.ai",
       "summary": "I architect ML pipelines and generate meaningful outcome.",
-      "current": true,
       "startDate": "2021-10-01",
       "highlights": []
     },
     {
-      "company": "Tenable",
+      "name": "Tenable",
       "position": "Staff Reliability Engineer",
-      "website": "https://www.tenable.com",
-      "picture": "",
+      "url": "https://www.tenable.com",
       "startDate": "2018-10-01",
       "endDate": "2021-10-01",
       "summary": "I create scalability solutions for Tenable.io.",
@@ -46,19 +44,16 @@
       ]
     },
     {
-      "company": "Uptime2020 Consultant",
+      "name": "Uptime2020 Consultant",
       "position": "Site Reliability Engineer",
-      "website": "",
-      "picture": "",
       "startDate": "2020-06-01",
       "endDate": "2020-09-01",
       "summary": "Supported various election-related SaaS companies to ensure the their product security and reliability during the 2020 US election cycle."
     },
     {
-      "company": "United States Digital Service - Department of Veterans Affairs",
+      "name": "United States Digital Service - Department of Veterans Affairs",
       "position": "Site Reliability Engineer",
-      "website": "https://www.usds.gov",
-      "picture": "",
+      "url": "https://www.usds.gov",
       "startDate": "2016-09-21",
       "endDate": "2018-08-31",
       "summary": "I began as the SRE for Caseflow and left having architected the VA's migration to AWS.",
@@ -71,10 +66,9 @@
       ]
     },
     {
-      "company": "United States Digital Service - Social Security Administration",
+      "name": "United States Digital Service - Social Security Administration",
       "position": "Technical Lead",
-      "website": "https://www.usds.gov",
-      "picture": "",
+      "url": "https://www.usds.gov",
       "startDate": "2015-11-07",
       "endDate": "2016-09-20",
       "summary": "I began as a React/Node.js coach and left as the Technical Lead on the Disability Case Processing System (DCPS).",
@@ -85,10 +79,9 @@
       ]
     },
     {
-      "company": "Boeing / Digital Receiver Technology",
+      "name": "Boeing / Digital Receiver Technology",
       "position": "Technical Lead Engineer",
-      "website": "https://www.drti.com",
-      "picture": "",
+      "url": "https://www.drti.com",
       "startDate": "2005-06-15",
       "endDate": "2015-10-31",
       "summary": "I began as an embedded C++ developer and left as a full stack software developer.",

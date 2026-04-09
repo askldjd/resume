@@ -1,13 +1,13 @@
 {
   "name": "resume",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Alan Ning's resume",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "build:paper": "hackmyresume build ./resume.json TO gen/resume.all -t node_modules/jsonresume-theme-paper",
-    "build": "npm run build:paper && cp gen/resume.html index.html",
-    "analyze": "hackmyresume analyze ./resume.json",
-    "validate": "hackmyresume validate ./resume.json"
+    "validate": "resumed validate resume.json",
+    "build:html": "resumed render resume.json -t jsonresume-theme-even -o index.html",
+    "build:pdf": "resumed export resume.json -t jsonresume-theme-even -o gen/resume.pdf",
+    "build": "npm run build:html && npm run build:pdf"
   },
   "repository": {
     "type": "git",
@@ -19,12 +19,9 @@
   },
   "homepage": "https://github.com/askldjd/resume#readme",
   "dependencies": {
-    "hackmyresume": "^1.9.0-beta",
-    "jsonresume-theme-elegant": "^1.11.2",
-    "jsonresume-theme-kwan": "0.0.2",
-    "jsonresume-theme-onepage": "0.0.3",
-    "jsonresume-theme-onepage-ds": "0.0.1",
-    "jsonresume-theme-paper": "^0.3.5",
-    "jsonresume-theme-slick": "^0.1.16"
+    "jsonresume-theme-even": "^0.26.1",
+    "jsonresume-theme-onepage": "^0.0.3",
+    "puppeteer": "^24.40.0",
+    "resumed": "^6.1.0"
   }
 }
