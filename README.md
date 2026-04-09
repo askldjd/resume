@@ -1,21 +1,20 @@
 # Alan Ning's Resume
 
-[![Build Status](https://circleci.com/gh/askldjd/resume.svg?style=shield)](https://circleci.com/gh/askldjd/)
+[![Build Resume](https://github.com/askldjd/resume/actions/workflows/build.yml/badge.svg)](https://github.com/askldjd/resume/actions/workflows/build.yml)
 
 My resume is in JSON format following the [JSON Resume schema](https://jsonresume.org/).
 
 ## Prerequisites
 
-You will need node.js and yarn available.
+You will need Node.js (v20+) and npm.
 
 ## Instructions
 
 1. `git clone git@github.com:askldjd/resume.git`
-1. `git checkout gh-page`
-1. `yarn install`
-1. `yarn run build`
-1. `yarn run analyze`
+2. `npm ci`
+3. `npm run validate`
+4. `npm run build`
 
-You should see the resume in `index.html` and `gen/resume.{format}`
+This generates `index.html` and `gen/resume.pdf`.
 
 You can also see the latest version at https://askldjd.github.io/resume/.
